@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E5F1533F-710B-4D91-A65E-04E55A1A68B3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EmployeePro</RootNamespace>
+    <AssemblyName>EmployeePro</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.78\lib\net461\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v22.2" />
+    <Reference Include="DevExpress.Data.Desktop.v22.2" />
+    <Reference Include="DevExpress.Drawing.v22.2" />
+    <Reference Include="DevExpress.Data.v22.2" />
+    <Reference Include="DevExpress.Utils.v22.2" />
+    <Reference Include="DevExpress.Sparkline.v22.2.Core" />
+    <Reference Include="DevExpress.XtraBars.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v22.2" />
+    <Reference Include="DevExpress.Printing.v22.2.Core" />
+    <Reference Include="DevExpress.XtraGrid.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v22.2.Core.Desktop, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraWizard.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Core.WinForms, Version=21.1460.35.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.SfInput.WinForms, Version=21.1460.35.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Shared.Base, Version=21.1460.35.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\CmdEmployee.cs" />
+    <Compile Include="Controller\CmdWage.cs" />
+    <Compile Include="Factory\Database.cs" />
+    <Compile Include="Factory\IRepository.cs" />
+    <Compile Include="Factory\Repository.cs" />
+    <Compile Include="Model\CLS_Employee.cs" />
+    <Compile Include="Model\CLS_Wage.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\DataForms\FRM_BasicProjectData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DataForms\FRM_BasicProjectData.Designer.cs">
+      <DependentUpon>FRM_BasicProjectData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataForms\FRM_ContractingData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DataForms\FRM_ContractingData.Designer.cs">
+      <DependentUpon>FRM_ContractingData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataForms\FRM_GeniralProjectInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DataForms\FRM_GeniralProjectInformation.Designer.cs">
+      <DependentUpon>FRM_GeniralProjectInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataForms\FRM_LaborData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DataForms\FRM_LaborData.Designer.cs">
+      <DependentUpon>FRM_LaborData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataForms\FRM_MachinesData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DataForms\FRM_MachinesData.Designer.cs">
+      <DependentUpon>FRM_MachinesData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataForms\FRM_MaterialsData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DataForms\FRM_MaterialsData.Designer.cs">
+      <DependentUpon>FRM_MaterialsData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataForms\FRM_Project_Item_Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DataForms\FRM_Project_Item_Data.Designer.cs">
+      <DependentUpon>FRM_Project_Item_Data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataForms\FRM_Show_All_Projects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DataForms\FRM_Show_All_Projects.Designer.cs">
+      <DependentUpon>FRM_Show_All_Projects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FRM_EditWage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FRM_EditWage.Designer.cs">
+      <DependentUpon>FRM_EditWage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FRM_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FRM_Employee.Designer.cs">
+      <DependentUpon>FRM_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FRM_Statment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FRM_Statment.Designer.cs">
+      <DependentUpon>FRM_Statment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\HelperClass.cs" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\DataForms\FRM_BasicProjectData.resx">
+      <DependentUpon>FRM_BasicProjectData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DataForms\FRM_ContractingData.resx">
+      <DependentUpon>FRM_ContractingData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DataForms\FRM_GeniralProjectInformation.resx">
+      <DependentUpon>FRM_GeniralProjectInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DataForms\FRM_LaborData.resx">
+      <DependentUpon>FRM_LaborData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DataForms\FRM_MachinesData.resx">
+      <DependentUpon>FRM_MachinesData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DataForms\FRM_MaterialsData.resx">
+      <DependentUpon>FRM_MaterialsData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DataForms\FRM_Project_Item_Data.resx">
+      <DependentUpon>FRM_Project_Item_Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DataForms\FRM_Show_All_Projects.resx">
+      <DependentUpon>FRM_Show_All_Projects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FRM_EditWage.resx">
+      <DependentUpon>FRM_EditWage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FRM_Employee.resx">
+      <DependentUpon>FRM_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FRM_Statment.resx">
+      <DependentUpon>FRM_Statment.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\EmployeePro.Model.CLS_Employee.datasource" />
+    <None Include="Properties\DataSources\EmployeePro.Model.CLS_Wage.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
