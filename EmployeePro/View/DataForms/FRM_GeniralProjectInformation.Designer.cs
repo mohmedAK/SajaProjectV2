@@ -50,10 +50,10 @@
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
             this.btnApply = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.sbItemData = new DevExpress.XtraEditors.SimpleButton();
+            this.sbMachinesData = new DevExpress.XtraEditors.SimpleButton();
             this.sbLabor = new DevExpress.XtraEditors.SimpleButton();
-            this.sbM = new DevExpress.XtraEditors.SimpleButton();
+            this.sbMaterial = new DevExpress.XtraEditors.SimpleButton();
             this.sbContract = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSalary.Properties)).BeginInit();
@@ -253,11 +253,11 @@
             this.tableLayoutPanel2.Controls.Add(this.labelControl5, 2, 3);
             this.tableLayoutPanel2.Controls.Add(this.dateEdit2, 3, 3);
             this.tableLayoutPanel2.Controls.Add(this.btnApply, 1, 5);
-            this.tableLayoutPanel2.Controls.Add(this.simpleButton1, 1, 6);
+            this.tableLayoutPanel2.Controls.Add(this.sbItemData, 1, 6);
             this.tableLayoutPanel2.Controls.Add(this.sbLabor, 2, 6);
-            this.tableLayoutPanel2.Controls.Add(this.sbM, 3, 7);
+            this.tableLayoutPanel2.Controls.Add(this.sbMaterial, 3, 7);
             this.tableLayoutPanel2.Controls.Add(this.simpleButton2, 0, 8);
-            this.tableLayoutPanel2.Controls.Add(this.simpleButton3, 1, 7);
+            this.tableLayoutPanel2.Controls.Add(this.sbMachinesData, 1, 7);
             this.tableLayoutPanel2.Controls.Add(this.sbContract, 3, 6);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(2, 39);
@@ -364,40 +364,44 @@
             this.btnApply.Size = new System.Drawing.Size(501, 33);
             this.btnApply.TabIndex = 0;
             this.btnApply.Text = "Save Project Information To Add Other Details";
+            this.btnApply.Click += new System.EventHandler(this.btnApply_Click);
             // 
-            // simpleButton1
+            // sbItemData
             // 
-            this.simpleButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(171, 352);
-            this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(161, 32);
-            this.simpleButton1.TabIndex = 28;
-            this.simpleButton1.Text = "Item Data";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.sbItemData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.sbItemData.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sbItemData.Appearance.Options.UseFont = true;
+            this.sbItemData.Enabled = false;
+            this.sbItemData.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.sbItemData.Location = new System.Drawing.Point(171, 352);
+            this.sbItemData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sbItemData.Name = "sbItemData";
+            this.sbItemData.Size = new System.Drawing.Size(161, 32);
+            this.sbItemData.TabIndex = 28;
+            this.sbItemData.Text = "Item Data";
+            this.sbItemData.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
-            // simpleButton3
+            // sbMachinesData
             // 
-            this.simpleButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            this.simpleButton3.Location = new System.Drawing.Point(171, 401);
-            this.simpleButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(161, 32);
-            this.simpleButton3.TabIndex = 29;
-            this.simpleButton3.Text = "Machines Data";
-            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
+            this.sbMachinesData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.sbMachinesData.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sbMachinesData.Appearance.Options.UseFont = true;
+            this.sbMachinesData.Enabled = false;
+            this.sbMachinesData.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.sbMachinesData.Location = new System.Drawing.Point(171, 401);
+            this.sbMachinesData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sbMachinesData.Name = "sbMachinesData";
+            this.sbMachinesData.Size = new System.Drawing.Size(161, 32);
+            this.sbMachinesData.TabIndex = 29;
+            this.sbMachinesData.Text = "Machines Data";
+            this.sbMachinesData.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // sbLabor
             // 
             this.sbLabor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.sbLabor.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sbLabor.Appearance.Options.UseFont = true;
+            this.sbLabor.Enabled = false;
             this.sbLabor.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
             this.sbLabor.Location = new System.Drawing.Point(338, 352);
             this.sbLabor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -407,25 +411,27 @@
             this.sbLabor.Text = "Labor Data";
             this.sbLabor.Click += new System.EventHandler(this.sbLabor_Click);
             // 
-            // sbM
+            // sbMaterial
             // 
-            this.sbM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.sbM.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sbM.Appearance.Options.UseFont = true;
-            this.sbM.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
-            this.sbM.Location = new System.Drawing.Point(479, 401);
-            this.sbM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.sbM.Name = "sbM";
-            this.sbM.Size = new System.Drawing.Size(193, 32);
-            this.sbM.TabIndex = 31;
-            this.sbM.Text = "Material Data";
-            this.sbM.Click += new System.EventHandler(this.sbM_Click);
+            this.sbMaterial.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.sbMaterial.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sbMaterial.Appearance.Options.UseFont = true;
+            this.sbMaterial.Enabled = false;
+            this.sbMaterial.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
+            this.sbMaterial.Location = new System.Drawing.Point(479, 401);
+            this.sbMaterial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sbMaterial.Name = "sbMaterial";
+            this.sbMaterial.Size = new System.Drawing.Size(193, 32);
+            this.sbMaterial.TabIndex = 31;
+            this.sbMaterial.Text = "Material Data";
+            this.sbMaterial.Click += new System.EventHandler(this.sbM_Click);
             // 
             // sbContract
             // 
             this.sbContract.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.sbContract.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sbContract.Appearance.Options.UseFont = true;
+            this.sbContract.Enabled = false;
             this.sbContract.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
             this.sbContract.Location = new System.Drawing.Point(479, 352);
             this.sbContract.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -488,10 +494,10 @@
         private DevExpress.XtraEditors.TextEdit textEdit4;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.SimpleButton btnApply;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.SimpleButton sbItemData;
+        private DevExpress.XtraEditors.SimpleButton sbMachinesData;
         private DevExpress.XtraEditors.SimpleButton sbLabor;
-        private DevExpress.XtraEditors.SimpleButton sbM;
+        private DevExpress.XtraEditors.SimpleButton sbMaterial;
         private DevExpress.XtraEditors.SimpleButton sbContract;
     }
 }

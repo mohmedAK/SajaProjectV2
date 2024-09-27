@@ -103,8 +103,8 @@
             this.tableLayoutWage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiscount.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSalary.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties.CalendarTimeProperties)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcWage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLSWageBindingSource)).BeginInit();
@@ -213,31 +213,35 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(1113, 30);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.barDockControlTop.Size = new System.Drawing.Size(954, 26);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 498);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 400);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(1113, 22);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.barDockControlBottom.Size = new System.Drawing.Size(954, 22);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 30);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 26);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 468);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 374);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1113, 30);
+            this.barDockControlRight.Location = new System.Drawing.Point(954, 26);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 468);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 374);
             // 
             // tableLayoutPanel1
             // 
@@ -246,12 +250,13 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.groupControl1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 30);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 26);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1113, 468);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(954, 374);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // groupControl1
@@ -262,11 +267,12 @@
             this.groupControl1.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupControl1.CaptionImageOptions.Image")));
             this.groupControl1.Controls.Add(this.tableLayoutEmployee);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl1.Location = new System.Drawing.Point(3, 3);
+            this.groupControl1.Location = new System.Drawing.Point(3, 2);
             this.groupControl1.LookAndFeel.SkinName = "Money Twins";
             this.groupControl1.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.groupControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1107, 462);
+            this.groupControl1.Size = new System.Drawing.Size(948, 370);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Employee";
             // 
@@ -292,7 +298,8 @@
             this.tableLayoutEmployee.Controls.Add(this.gcWage, 2, 1);
             this.tableLayoutEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutEmployee.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutEmployee.Location = new System.Drawing.Point(2, 41);
+            this.tableLayoutEmployee.Location = new System.Drawing.Point(2, 39);
+            this.tableLayoutEmployee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutEmployee.Name = "tableLayoutEmployee";
             this.tableLayoutEmployee.RowCount = 7;
             this.tableLayoutEmployee.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.25F));
@@ -302,7 +309,7 @@
             this.tableLayoutEmployee.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.25F));
             this.tableLayoutEmployee.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.02961F));
             this.tableLayoutEmployee.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.16173F));
-            this.tableLayoutEmployee.Size = new System.Drawing.Size(1103, 419);
+            this.tableLayoutEmployee.Size = new System.Drawing.Size(944, 329);
             this.tableLayoutEmployee.TabIndex = 0;
             // 
             // labelControl1
@@ -310,9 +317,10 @@
             this.labelControl1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(224, 11);
+            this.labelControl1.Location = new System.Drawing.Point(194, 8);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(24, 24);
+            this.labelControl1.Size = new System.Drawing.Size(18, 19);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "ID:";
             // 
@@ -321,9 +329,10 @@
             this.labelControl2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(152, 57);
+            this.labelControl2.Location = new System.Drawing.Point(135, 44);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(96, 24);
+            this.labelControl2.Size = new System.Drawing.Size(77, 19);
             this.labelControl2.TabIndex = 1;
             this.labelControl2.Text = "First Name:";
             // 
@@ -332,9 +341,10 @@
             this.labelControl3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(155, 103);
+            this.labelControl3.Location = new System.Drawing.Point(137, 80);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(93, 24);
+            this.labelControl3.Size = new System.Drawing.Size(75, 19);
             this.labelControl3.TabIndex = 2;
             this.labelControl3.Text = "Last Name:";
             // 
@@ -343,9 +353,10 @@
             this.labelControl4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(175, 149);
+            this.labelControl4.Location = new System.Drawing.Point(154, 116);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(73, 24);
+            this.labelControl4.Size = new System.Drawing.Size(58, 19);
             this.labelControl4.TabIndex = 3;
             this.labelControl4.Text = "Address:";
             // 
@@ -354,62 +365,68 @@
             this.labelControl5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(154, 195);
+            this.labelControl5.Location = new System.Drawing.Point(137, 152);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(94, 24);
+            this.labelControl5.Size = new System.Drawing.Size(75, 19);
             this.labelControl5.TabIndex = 4;
             this.labelControl5.Text = "Final Total:";
             // 
             // txtId
             // 
             this.txtId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtId.Location = new System.Drawing.Point(254, 9);
+            this.txtId.Location = new System.Drawing.Point(218, 6);
+            this.txtId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtId.MenuManager = this.barManager1;
             this.txtId.Name = "txtId";
             this.txtId.Properties.Appearance.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.Properties.Appearance.Options.UseFont = true;
             this.txtId.Properties.Mask.EditMask = "n0";
             this.txtId.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.txtId.Size = new System.Drawing.Size(258, 28);
+            this.txtId.Size = new System.Drawing.Size(220, 24);
             this.txtId.TabIndex = 5;
             // 
             // txtFirstName
             // 
             this.txtFirstName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFirstName.Location = new System.Drawing.Point(254, 55);
+            this.txtFirstName.Location = new System.Drawing.Point(218, 42);
+            this.txtFirstName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFirstName.MenuManager = this.barManager1;
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Properties.Appearance.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFirstName.Properties.Appearance.Options.UseFont = true;
-            this.txtFirstName.Size = new System.Drawing.Size(258, 28);
+            this.txtFirstName.Size = new System.Drawing.Size(220, 24);
             this.txtFirstName.TabIndex = 6;
             // 
             // txtLastName
             // 
             this.txtLastName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLastName.Location = new System.Drawing.Point(254, 101);
+            this.txtLastName.Location = new System.Drawing.Point(218, 78);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLastName.MenuManager = this.barManager1;
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Properties.Appearance.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLastName.Properties.Appearance.Options.UseFont = true;
-            this.txtLastName.Size = new System.Drawing.Size(258, 28);
+            this.txtLastName.Size = new System.Drawing.Size(220, 24);
             this.txtLastName.TabIndex = 7;
             // 
             // txtAddress
             // 
             this.txtAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtAddress.Location = new System.Drawing.Point(254, 147);
+            this.txtAddress.Location = new System.Drawing.Point(218, 114);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAddress.MenuManager = this.barManager1;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Properties.Appearance.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddress.Properties.Appearance.Options.UseFont = true;
-            this.txtAddress.Size = new System.Drawing.Size(258, 28);
+            this.txtAddress.Size = new System.Drawing.Size(220, 24);
             this.txtAddress.TabIndex = 8;
             // 
             // txtFinalTotal
             // 
             this.txtFinalTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFinalTotal.Location = new System.Drawing.Point(254, 193);
+            this.txtFinalTotal.Location = new System.Drawing.Point(218, 150);
+            this.txtFinalTotal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFinalTotal.MenuManager = this.barManager1;
             this.txtFinalTotal.Name = "txtFinalTotal";
             this.txtFinalTotal.Properties.Appearance.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -417,18 +434,19 @@
             this.txtFinalTotal.Properties.Mask.BeepOnError = true;
             this.txtFinalTotal.Properties.Mask.EditMask = "n0";
             this.txtFinalTotal.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.txtFinalTotal.Size = new System.Drawing.Size(258, 28);
+            this.txtFinalTotal.Size = new System.Drawing.Size(220, 24);
             this.txtFinalTotal.TabIndex = 9;
             // 
             // pictureEdit2
             // 
             this.pictureEdit2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureEdit2.Location = new System.Drawing.Point(254, 233);
+            this.pictureEdit2.Location = new System.Drawing.Point(218, 182);
+            this.pictureEdit2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureEdit2.MenuManager = this.barManager1;
             this.pictureEdit2.Name = "pictureEdit2";
             this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit2.Size = new System.Drawing.Size(258, 131);
+            this.pictureEdit2.Size = new System.Drawing.Size(220, 104);
             this.pictureEdit2.TabIndex = 11;
             this.pictureEdit2.Click += new System.EventHandler(this.pictureEdit2_Click);
             // 
@@ -450,33 +468,36 @@
             this.tableLayoutWage.Controls.Add(this.btnAddwage, 6, 0);
             this.tableLayoutWage.Controls.Add(this.labelControl8, 4, 0);
             this.tableLayoutWage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutWage.Location = new System.Drawing.Point(518, 3);
+            this.tableLayoutWage.Location = new System.Drawing.Point(444, 2);
+            this.tableLayoutWage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutWage.Name = "tableLayoutWage";
             this.tableLayoutWage.RowCount = 1;
             this.tableLayoutWage.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutWage.Size = new System.Drawing.Size(582, 40);
+            this.tableLayoutWage.Size = new System.Drawing.Size(497, 32);
             this.tableLayoutWage.TabIndex = 12;
             // 
             // txtDiscount
             // 
             this.txtDiscount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDiscount.Location = new System.Drawing.Point(398, 6);
+            this.txtDiscount.Location = new System.Drawing.Point(340, 4);
+            this.txtDiscount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDiscount.MenuManager = this.barManager1;
             this.txtDiscount.Name = "txtDiscount";
             this.txtDiscount.Properties.Appearance.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiscount.Properties.Appearance.Options.UseFont = true;
-            this.txtDiscount.Size = new System.Drawing.Size(73, 28);
+            this.txtDiscount.Size = new System.Drawing.Size(61, 24);
             this.txtDiscount.TabIndex = 13;
             // 
             // txtSalary
             // 
             this.txtSalary.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSalary.Location = new System.Drawing.Point(236, 6);
+            this.txtSalary.Location = new System.Drawing.Point(202, 4);
+            this.txtSalary.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSalary.MenuManager = this.barManager1;
             this.txtSalary.Name = "txtSalary";
             this.txtSalary.Properties.Appearance.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSalary.Properties.Appearance.Options.UseFont = true;
-            this.txtSalary.Size = new System.Drawing.Size(79, 28);
+            this.txtSalary.Size = new System.Drawing.Size(67, 24);
             this.txtSalary.TabIndex = 13;
             // 
             // labelControl6
@@ -484,9 +505,10 @@
             this.labelControl6.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(5, 9);
+            this.labelControl6.Location = new System.Drawing.Point(5, 7);
+            this.labelControl6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(39, 21);
+            this.labelControl6.Size = new System.Drawing.Size(32, 17);
             this.labelControl6.TabIndex = 1;
             this.labelControl6.Text = "Date:";
             // 
@@ -495,9 +517,10 @@
             this.labelControl7.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(183, 9);
+            this.labelControl7.Location = new System.Drawing.Point(156, 7);
+            this.labelControl7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(47, 21);
+            this.labelControl7.Size = new System.Drawing.Size(40, 17);
             this.labelControl7.TabIndex = 2;
             this.labelControl7.Text = "Salary:";
             // 
@@ -505,23 +528,25 @@
             // 
             this.txtDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDate.EditValue = null;
-            this.txtDate.Location = new System.Drawing.Point(50, 8);
+            this.txtDate.Location = new System.Drawing.Point(43, 6);
+            this.txtDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDate.MenuManager = this.barManager1;
             this.txtDate.Name = "txtDate";
             this.txtDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtDate.Size = new System.Drawing.Size(106, 23);
+            this.txtDate.Size = new System.Drawing.Size(90, 20);
             this.txtDate.TabIndex = 13;
             // 
             // btnAddwage
             // 
             this.btnAddwage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddwage.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAddwage.ImageOptions.Image")));
-            this.btnAddwage.Location = new System.Drawing.Point(477, 5);
+            this.btnAddwage.Location = new System.Drawing.Point(407, 15);
+            this.btnAddwage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddwage.Name = "btnAddwage";
-            this.btnAddwage.Size = new System.Drawing.Size(102, 29);
+            this.btnAddwage.Size = new System.Drawing.Size(87, 1);
             this.btnAddwage.TabIndex = 14;
             this.btnAddwage.Text = "Add Wage";
             this.btnAddwage.Click += new System.EventHandler(this.btnAddwage_Click);
@@ -531,9 +556,10 @@
             this.labelControl8.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(325, 9);
+            this.labelControl8.Location = new System.Drawing.Point(277, 7);
+            this.labelControl8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(67, 21);
+            this.labelControl8.Size = new System.Drawing.Size(57, 17);
             this.labelControl8.TabIndex = 3;
             this.labelControl8.Text = "Discount:";
             // 
@@ -545,12 +571,13 @@
             this.tableLayoutPanel4.Controls.Add(this.btnAddEmployee, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.btnBack, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(254, 370);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(218, 290);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(258, 46);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(220, 37);
             this.tableLayoutPanel4.TabIndex = 13;
             // 
             // btnAddEmployee
@@ -559,9 +586,10 @@
             this.btnAddEmployee.Appearance.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddEmployee.Appearance.Options.UseFont = true;
             this.btnAddEmployee.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAddEmployee.ImageOptions.Image")));
-            this.btnAddEmployee.Location = new System.Drawing.Point(132, 8);
+            this.btnAddEmployee.Location = new System.Drawing.Point(113, 18);
+            this.btnAddEmployee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddEmployee.Name = "btnAddEmployee";
-            this.btnAddEmployee.Size = new System.Drawing.Size(123, 29);
+            this.btnAddEmployee.Size = new System.Drawing.Size(104, 1);
             this.btnAddEmployee.TabIndex = 16;
             this.btnAddEmployee.Text = "Add Employee";
             this.btnAddEmployee.Click += new System.EventHandler(this.btnAddEmployee_Click);
@@ -572,9 +600,10 @@
             this.btnBack.Appearance.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.Appearance.Options.UseFont = true;
             this.btnBack.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.ImageOptions.Image")));
-            this.btnBack.Location = new System.Drawing.Point(3, 8);
+            this.btnBack.Location = new System.Drawing.Point(3, 18);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(123, 29);
+            this.btnBack.Size = new System.Drawing.Size(104, 1);
             this.btnBack.TabIndex = 15;
             this.btnBack.Text = "Back";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
@@ -583,15 +612,17 @@
             // 
             this.gcWage.DataSource = this.cLSWageBindingSource;
             this.gcWage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gcWage.Location = new System.Drawing.Point(518, 49);
+            this.gcWage.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gcWage.Location = new System.Drawing.Point(444, 38);
             this.gcWage.MainView = this.gvWage;
+            this.gcWage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gcWage.MenuManager = this.barManager1;
             this.gcWage.Name = "gcWage";
             this.gcWage.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repEdit,
             this.repDelete});
             this.tableLayoutEmployee.SetRowSpan(this.gcWage, 6);
-            this.gcWage.Size = new System.Drawing.Size(582, 367);
+            this.gcWage.Size = new System.Drawing.Size(497, 289);
             this.gcWage.TabIndex = 14;
             this.gcWage.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvWage});
@@ -621,6 +652,7 @@
             this.colTotal,
             this.colEdit,
             this.colDelete});
+            this.gvWage.DetailHeight = 284;
             this.gvWage.GridControl = this.gcWage;
             this.gvWage.Name = "gvWage";
             this.gvWage.OptionsView.ShowGroupPanel = false;
@@ -628,80 +660,79 @@
             // colEmpId
             // 
             this.colEmpId.FieldName = "EmpId";
-            this.colEmpId.MinWidth = 25;
+            this.colEmpId.MinWidth = 21;
             this.colEmpId.Name = "colEmpId";
             this.colEmpId.OptionsColumn.AllowEdit = false;
             this.colEmpId.OptionsColumn.AllowFocus = false;
             this.colEmpId.OptionsColumn.AllowMove = false;
-            this.colEmpId.Width = 93;
+            this.colEmpId.Width = 80;
             // 
             // colId
             // 
             this.colId.FieldName = "Id";
-            this.colId.MinWidth = 25;
+            this.colId.MinWidth = 21;
             this.colId.Name = "colId";
             this.colId.OptionsColumn.AllowEdit = false;
             this.colId.OptionsColumn.AllowFocus = false;
             this.colId.OptionsColumn.AllowMove = false;
-            this.colId.Width = 93;
+            this.colId.Width = 80;
             // 
             // colEntryDate
             // 
             this.colEntryDate.FieldName = "EntryDate";
-            this.colEntryDate.MinWidth = 25;
+            this.colEntryDate.MinWidth = 21;
             this.colEntryDate.Name = "colEntryDate";
             this.colEntryDate.OptionsColumn.AllowEdit = false;
             this.colEntryDate.OptionsColumn.AllowFocus = false;
             this.colEntryDate.OptionsColumn.AllowMove = false;
             this.colEntryDate.Visible = true;
             this.colEntryDate.VisibleIndex = 0;
-            this.colEntryDate.Width = 119;
+            this.colEntryDate.Width = 102;
             // 
             // colSalary
             // 
             this.colSalary.FieldName = "Salary";
-            this.colSalary.MinWidth = 25;
+            this.colSalary.MinWidth = 21;
             this.colSalary.Name = "colSalary";
             this.colSalary.OptionsColumn.AllowEdit = false;
             this.colSalary.OptionsColumn.AllowFocus = false;
             this.colSalary.OptionsColumn.AllowMove = false;
             this.colSalary.Visible = true;
             this.colSalary.VisibleIndex = 1;
-            this.colSalary.Width = 84;
+            this.colSalary.Width = 72;
             // 
             // colDiscount
             // 
             this.colDiscount.FieldName = "Discount";
-            this.colDiscount.MinWidth = 25;
+            this.colDiscount.MinWidth = 21;
             this.colDiscount.Name = "colDiscount";
             this.colDiscount.OptionsColumn.AllowEdit = false;
             this.colDiscount.OptionsColumn.AllowFocus = false;
             this.colDiscount.OptionsColumn.AllowMove = false;
             this.colDiscount.Visible = true;
             this.colDiscount.VisibleIndex = 2;
-            this.colDiscount.Width = 84;
+            this.colDiscount.Width = 72;
             // 
             // colTotal
             // 
             this.colTotal.FieldName = "Total";
-            this.colTotal.MinWidth = 25;
+            this.colTotal.MinWidth = 21;
             this.colTotal.Name = "colTotal";
             this.colTotal.OptionsColumn.AllowEdit = false;
             this.colTotal.OptionsColumn.AllowFocus = false;
             this.colTotal.OptionsColumn.AllowMove = false;
             this.colTotal.Visible = true;
             this.colTotal.VisibleIndex = 3;
-            this.colTotal.Width = 88;
             // 
             // colEdit
             // 
             this.colEdit.ColumnEdit = this.repEdit;
-            this.colEdit.MinWidth = 25;
+            this.colEdit.MinWidth = 21;
             this.colEdit.Name = "colEdit";
             this.colEdit.OptionsColumn.AllowMove = false;
             this.colEdit.Visible = true;
             this.colEdit.VisibleIndex = 4;
-            this.colEdit.Width = 94;
+            this.colEdit.Width = 81;
             // 
             // repEdit
             // 
@@ -716,12 +747,12 @@
             // colDelete
             // 
             this.colDelete.ColumnEdit = this.repDelete;
-            this.colDelete.MinWidth = 25;
+            this.colDelete.MinWidth = 21;
             this.colDelete.Name = "colDelete";
             this.colDelete.OptionsColumn.AllowMove = false;
             this.colDelete.Visible = true;
             this.colDelete.VisibleIndex = 5;
-            this.colDelete.Width = 94;
+            this.colDelete.Width = 81;
             // 
             // repDelete
             // 
@@ -734,9 +765,9 @@
             // 
             // FRM_Employee
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1113, 520);
+            this.ClientSize = new System.Drawing.Size(954, 422);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
@@ -744,6 +775,7 @@
             this.Controls.Add(this.barDockControlTop);
             this.LookAndFeel.SkinName = "Money Twins";
             this.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FRM_Employee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employee Form";

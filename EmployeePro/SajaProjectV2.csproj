@@ -126,6 +126,42 @@
     <Compile Include="View\DataForms\FRM_Show_All_Projects.Designer.cs">
       <DependentUpon>FRM_Show_All_Projects.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FallowUP\FRM_CostMachinesFollow-up.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FallowUP\FRM_CostMachinesFollow-up.Designer.cs">
+      <DependentUpon>FRM_CostMachinesFollow-up.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FallowUP\FRM_FollowUp_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FallowUP\FRM_FollowUp_Menu.Designer.cs">
+      <DependentUpon>FRM_FollowUp_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FallowUP\FRM_LaborFollowUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FallowUP\FRM_LaborFollowUp.Designer.cs">
+      <DependentUpon>FRM_LaborFollowUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FallowUP\FRM_MachinesFollowUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FallowUP\FRM_MachinesFollowUp.Designer.cs">
+      <DependentUpon>FRM_MachinesFollowUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FallowUP\FRM_MaterialsFollow-up.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FallowUP\FRM_MaterialsFollow-up.Designer.cs">
+      <DependentUpon>FRM_MaterialsFollow-up.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FallowUP\FRM_WorkProgressData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FallowUP\FRM_WorkProgressData.Designer.cs">
+      <DependentUpon>FRM_WorkProgressData.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FRM_EditWage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +214,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\DataForms\FRM_Show_All_Projects.resx">
       <DependentUpon>FRM_Show_All_Projects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FallowUP\FRM_CostMachinesFollow-up.resx">
+      <DependentUpon>FRM_CostMachinesFollow-up.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FallowUP\FRM_FollowUp_Menu.resx">
+      <DependentUpon>FRM_FollowUp_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FallowUP\FRM_LaborFollowUp.resx">
+      <DependentUpon>FRM_LaborFollowUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FallowUP\FRM_MachinesFollowUp.resx">
+      <DependentUpon>FRM_MachinesFollowUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FallowUP\FRM_MaterialsFollow-up.resx">
+      <DependentUpon>FRM_MaterialsFollow-up.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FallowUP\FRM_WorkProgressData.resx">
+      <DependentUpon>FRM_WorkProgressData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FRM_EditWage.resx">
       <DependentUpon>FRM_EditWage.cs</DependentUpon>

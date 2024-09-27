@@ -54,5 +54,21 @@ namespace EmployeePro.View.DataForms
             FRM_Project_Item_Data fRM_Project_Item = new FRM_Project_Item_Data();
             fRM_Project_Item.Show();
         }
+
+        private void btnApply_Click(object sender, EventArgs e)
+        {
+            enableButton();
+        }
+
+
+        void enableButton()
+        {
+ 
+            this.sbLabor.Enabled = true;
+            this.sbItemData.Enabled = true;
+            this.sbMachinesData.Enabled = true;
+            this.sbMaterial.Enabled = true;
+            this.sbContract.Enabled = true;
+        }
     }
 }
