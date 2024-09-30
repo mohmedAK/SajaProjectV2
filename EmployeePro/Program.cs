@@ -19,8 +19,8 @@ namespace SajaProjectV2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FRM_Employee());
-            //Application.Run(new View.DataForms.FRM_BasicProjectData());
+            //Application.Run(new FRM_Employee());
+            Application.Run(new View.DataForms.FRM_BasicProjectData());
         }
     }
 }

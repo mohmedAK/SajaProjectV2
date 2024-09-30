@@ -242,10 +242,6 @@ namespace SajaProjectV2.View
 
         private void barButtonAddEmployee_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
-
-
-            
             HelperClass.EnableControls(tableLayoutEmployee);
             getNewId();
 

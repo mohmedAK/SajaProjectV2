@@ -24,5 +24,17 @@ namespace SajaProjectV2.View.DataForms
             FRM_GeniralProjectInformation fRM_GeniralProjectInformation = new FRM_GeniralProjectInformation();
             fRM_GeniralProjectInformation.Show();
         }
+
+        private void sbShowProjects_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FRM_Show_All_Projects fRM_Show_All_Projects = new FRM_Show_All_Projects();
+            fRM_Show_All_Projects.Show();
+        }
+
+        private void FRM_BasicProjectData_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

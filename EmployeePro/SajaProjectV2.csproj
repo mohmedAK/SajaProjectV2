@@ -316,6 +316,16 @@
     <None Include="packages.config" />
     <None Include="Properties\DataSources\EmployeePro.Model.CLS_Employee.datasource" />
     <None Include="Properties\DataSources\EmployeePro.Model.CLS_Wage.datasource" />
+    <None Include="Properties\DataSources\SajaProjectV2.Model.CLS_Contract.datasource" />
+    <None Include="Properties\DataSources\SajaProjectV2.Model.CLS_LaborDate.datasource" />
+    <None Include="Properties\DataSources\SajaProjectV2.Model.CLS_LaborFallow.datasource" />
+    <None Include="Properties\DataSources\SajaProjectV2.Model.CLS_MachineData.datasource" />
+    <None Include="Properties\DataSources\SajaProjectV2.Model.CLS_MachineFallow.datasource" />
+    <None Include="Properties\DataSources\SajaProjectV2.Model.CLS_MaterialData.datasource" />
+    <None Include="Properties\DataSources\SajaProjectV2.Model.CLS_MaterialFallow.datasource" />
+    <None Include="Properties\DataSources\SajaProjectV2.Model.CLS_ProjectInformation.datasource" />
+    <None Include="Properties\DataSources\SajaProjectV2.Model.CLS_ProjectItemData.datasource" />
+    <None Include="Properties\DataSources\SajaProjectV2.Model.CLS_WorkProgressFallow.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
