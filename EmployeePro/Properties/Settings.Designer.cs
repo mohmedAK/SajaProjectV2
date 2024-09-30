@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SagaProjectV2.Properties
+namespace SajaProjectV2.Properties
 {
 
 

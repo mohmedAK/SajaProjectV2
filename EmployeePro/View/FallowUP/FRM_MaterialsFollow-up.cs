@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SagaProjectV2.View.FallowUP
+namespace SajaProjectV2.View.FallowUP
 {
     public partial class FRM_MaterialsFollow_up : DevExpress.XtraEditors.XtraForm
     {

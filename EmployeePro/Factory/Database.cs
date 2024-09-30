@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Configuration;
 
 
-namespace SagaProjectV2.Factory
+namespace SajaProjectV2.Factory
 {
     public class Database
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SagaProjectV2.model
+namespace SajaProjectV2.model
 {
     public class CLS_ProjectInformation
     {

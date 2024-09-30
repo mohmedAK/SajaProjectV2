@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SagaProjectV2.Factory
+namespace SajaProjectV2.Factory
 {
    public interface IRepository<T> where T:class
     {

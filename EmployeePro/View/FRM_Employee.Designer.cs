@@ -1,4 +1,4 @@
-﻿namespace SagaProjectV2.View
+﻿namespace SajaProjectV2.View
 {
     partial class FRM_Employee
     {
@@ -586,10 +586,10 @@
             this.btnAddEmployee.Appearance.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddEmployee.Appearance.Options.UseFont = true;
             this.btnAddEmployee.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAddEmployee.ImageOptions.Image")));
-            this.btnAddEmployee.Location = new System.Drawing.Point(113, 18);
+            this.btnAddEmployee.Location = new System.Drawing.Point(113, 2);
             this.btnAddEmployee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddEmployee.Name = "btnAddEmployee";
-            this.btnAddEmployee.Size = new System.Drawing.Size(104, 1);
+            this.btnAddEmployee.Size = new System.Drawing.Size(104, 33);
             this.btnAddEmployee.TabIndex = 16;
             this.btnAddEmployee.Text = "Add Employee";
             this.btnAddEmployee.Click += new System.EventHandler(this.btnAddEmployee_Click);
@@ -600,10 +600,10 @@
             this.btnBack.Appearance.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.Appearance.Options.UseFont = true;
             this.btnBack.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.ImageOptions.Image")));
-            this.btnBack.Location = new System.Drawing.Point(3, 18);
+            this.btnBack.Location = new System.Drawing.Point(3, 2);
             this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(104, 1);
+            this.btnBack.Size = new System.Drawing.Size(104, 33);
             this.btnBack.TabIndex = 15;
             this.btnBack.Text = "Back";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
@@ -629,7 +629,7 @@
             // 
             // cLSWageBindingSource
             // 
-            this.cLSWageBindingSource.DataSource = typeof(SagaProjectV2.Model.CLS_Wage);
+            this.cLSWageBindingSource.DataSource = typeof(SajaProjectV2.Model.CLS_Wage);
             // 
             // gvWage
             // 

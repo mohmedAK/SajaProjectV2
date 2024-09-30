@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SagaProjectV2.Factory;
-using SagaProjectV2.Model;
+using SajaProjectV2.Factory;
+using SajaProjectV2.Model;
 
-namespace SagaProjectV2.Controller
+namespace SajaProjectV2.Controller
 {
      class CmdWage
     {

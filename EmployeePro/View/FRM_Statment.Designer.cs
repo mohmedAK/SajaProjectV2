@@ -1,4 +1,4 @@
-﻿namespace SagaProjectV2.View
+﻿namespace SajaProjectV2.View
 {
     partial class FRM_Statment
     {
@@ -205,7 +205,7 @@
             // 
             // cLSEmployeeBindingSource
             // 
-            this.cLSEmployeeBindingSource.DataSource = typeof(SagaProjectV2.Model.CLS_Employee);
+            this.cLSEmployeeBindingSource.DataSource = typeof(SajaProjectV2.Model.CLS_Employee);
             // 
             // gvEmployee
             // 

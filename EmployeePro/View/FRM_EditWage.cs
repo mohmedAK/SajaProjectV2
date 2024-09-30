@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 
-namespace SagaProjectV2.View
+namespace SajaProjectV2.View
 {
     public partial class FRM_EditWage : DevExpress.XtraEditors.XtraForm
     {
@@ -24,6 +24,11 @@ namespace SagaProjectV2.View
         }
 
         private void FRM_EditWage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnApply_Click(object sender, EventArgs e)
         {
 
         }

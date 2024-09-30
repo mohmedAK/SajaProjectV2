@@ -5,9 +5,9 @@ using System.Windows.Forms;
 using DevExpress.UserSkins;
 using DevExpress.Skins;
 using DevExpress.LookAndFeel;
-using SagaProjectV2.View;
+using SajaProjectV2.View;
 
-namespace SagaProjectV2
+namespace SajaProjectV2
 {
     static class Program
     {
@@ -19,7 +19,8 @@ namespace SagaProjectV2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new View.DataForms.FRM_BasicProjectData());
+            Application.Run(new FRM_Employee());
+            //Application.Run(new View.DataForms.FRM_BasicProjectData());
         }
     }
 }

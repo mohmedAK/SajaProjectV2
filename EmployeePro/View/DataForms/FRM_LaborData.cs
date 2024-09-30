@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SagaProjectV2.View.DataForms
+namespace SajaProjectV2.View.DataForms
 {
     public partial class FRM_LaborData : DevExpress.XtraEditors.XtraForm
     {

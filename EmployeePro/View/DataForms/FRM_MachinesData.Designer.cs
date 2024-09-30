@@ -1,4 +1,4 @@
-﻿namespace SagaProjectV2.View.DataForms
+﻿namespace SajaProjectV2.View.DataForms
 {
     partial class FRM_MachinesData
     {

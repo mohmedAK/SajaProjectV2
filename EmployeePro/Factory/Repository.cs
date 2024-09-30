@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 using System.Data;
 using Dapper;
 
-namespace SagaProjectV2.Factory
+namespace SajaProjectV2.Factory
 {
    public class Repository<T>:Database,IRepository<T> where T:class
     {
-       private IDbConnection connection = new SqlConnection(conVal("sagaDB"));
+       private IDbConnection connection = new MySqlConnection(conVal("sajaDB"));
        
 
         public void Execute(string sqlr)

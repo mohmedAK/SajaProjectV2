@@ -8,14 +8,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
-using SagaProjectV2.Controller;
-using SagaProjectV2.Model;
+using SajaProjectV2.Controller;
+using SajaProjectV2.Model;
 
 
 
 
 
-namespace SagaProjectV2.View
+namespace SajaProjectV2.View
 {
     
     public partial class FRM_Statment: DevExpress.XtraEditors.XtraForm

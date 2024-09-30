@@ -1,4 +1,4 @@
-﻿namespace SagaProjectV2.View.FallowUP
+﻿namespace SajaProjectV2.View.FallowUP
 {
     partial class FRM_FollowUp_Menu
     {

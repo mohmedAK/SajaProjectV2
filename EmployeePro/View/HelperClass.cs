@@ -9,7 +9,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Security.Cryptography;
 
-namespace SagaProjectV2.View
+namespace SajaProjectV2.View
 {
     class HelperClass
         //change image to stream//
