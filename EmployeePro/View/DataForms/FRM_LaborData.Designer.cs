@@ -1,4 +1,4 @@
-﻿namespace EmployeePro.View.DataForms
+﻿namespace SagaProjectV2.View.DataForms
 {
     partial class FRM_LaborData
     {

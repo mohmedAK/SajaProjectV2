@@ -1,4 +1,4 @@
-﻿namespace EmployeePro.View
+﻿namespace SagaProjectV2.View
 {
     partial class FRM_EditWage
     {

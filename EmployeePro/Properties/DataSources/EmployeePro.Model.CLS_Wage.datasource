@@ -6,5 +6,5 @@
     cause the file to be unrecognizable by the program.
 -->
 <GenericObjectDataSource DisplayName="CLS_Wage" Version="1.0" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
-   <TypeInfo>EmployeePro.Model.CLS_Wage, EmployeePro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</TypeInfo>
+   <TypeInfo>SagaProjectV2.Model.CLS_Wage, SagaProjectV2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</TypeInfo>
 </GenericObjectDataSource>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EmployeePro.Properties
+namespace SagaProjectV2.Properties
 {
 
 

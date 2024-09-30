@@ -1,4 +1,4 @@
-﻿namespace EmployeePro.View
+﻿namespace SagaProjectV2.View
 {
     partial class FRM_Employee
     {
@@ -629,7 +629,7 @@
             // 
             // cLSWageBindingSource
             // 
-            this.cLSWageBindingSource.DataSource = typeof(EmployeePro.Model.CLS_Wage);
+            this.cLSWageBindingSource.DataSource = typeof(SagaProjectV2.Model.CLS_Wage);
             // 
             // gvWage
             // 

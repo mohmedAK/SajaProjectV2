@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using EmployeePro.Factory;
-using EmployeePro.Model;
+using SagaProjectV2.Factory;
+using SagaProjectV2.Model;
 
-namespace EmployeePro.Controller
+namespace SagaProjectV2.Controller
 {
      class CmdWage
     {

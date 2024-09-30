@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
-namespace EmployeePro.View.DataForms
+namespace SagaProjectV2.View.DataForms
 {
     public partial class FRM_GeniralProjectInformation : DevExpress.XtraEditors.XtraForm
     {

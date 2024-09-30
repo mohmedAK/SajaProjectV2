@@ -1,4 +1,4 @@
-﻿namespace EmployeePro.View.FallowUP
+﻿namespace SagaProjectV2.View.FallowUP
 {
     partial class FRM_MachinesFollowUp
     {
@@ -44,11 +44,11 @@
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.sbShowAll = new DevExpress.XtraEditors.SimpleButton();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.cbTypeOfMachines = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.seRentOfDays = new DevExpress.XtraEditors.SpinEdit();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             ((System.ComponentModel.ISupportInitialize)(this.txtProjectName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbWorkItem.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbOwnerShip.Properties)).BeginInit();
@@ -56,11 +56,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cbTypeOfMachines.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seRentOfDays.Properties)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cbTypeOfMachines.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.seRentOfDays.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // txtProjectName
@@ -103,12 +103,12 @@
             this.labelControl8.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(129, 83);
+            this.labelControl8.Location = new System.Drawing.Point(145, 83);
             this.labelControl8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(128, 19);
+            this.labelControl8.Size = new System.Drawing.Size(112, 19);
             this.labelControl8.TabIndex = 26;
-            this.labelControl8.Text = "Type of Machines :";
+            this.labelControl8.Text = "Select Machine :";
             // 
             // cbWorkItem
             // 
@@ -294,38 +294,6 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(675, 373);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.groupControl1, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(685, 418);
-            this.tableLayoutPanel1.TabIndex = 5;
-            // 
-            // groupControl1
-            // 
-            this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupControl1.AppearanceCaption.Options.UseFont = true;
-            this.groupControl1.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupControl1.CaptionImageOptions.Image")));
-            this.groupControl1.Controls.Add(this.tableLayoutPanel2);
-            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl1.Location = new System.Drawing.Point(3, 2);
-            this.groupControl1.LookAndFeel.SkinName = "Money Twins";
-            this.groupControl1.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.groupControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(679, 414);
-            this.groupControl1.TabIndex = 0;
-            this.groupControl1.Text = "Machines Follow-up Data";
-            // 
             // cbTypeOfMachines
             // 
             this.cbTypeOfMachines.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -373,6 +341,38 @@
             this.seRentOfDays.Size = new System.Drawing.Size(252, 20);
             this.seRentOfDays.TabIndex = 56;
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.groupControl1, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(685, 418);
+            this.tableLayoutPanel1.TabIndex = 5;
+            // 
+            // groupControl1
+            // 
+            this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupControl1.AppearanceCaption.Options.UseFont = true;
+            this.groupControl1.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("groupControl1.CaptionImageOptions.Image")));
+            this.groupControl1.Controls.Add(this.tableLayoutPanel2);
+            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupControl1.Location = new System.Drawing.Point(3, 2);
+            this.groupControl1.LookAndFeel.SkinName = "Money Twins";
+            this.groupControl1.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.groupControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(679, 414);
+            this.groupControl1.TabIndex = 0;
+            this.groupControl1.Text = "Machines Follow-up Data";
+            // 
             // FRM_MachinesFollowUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -381,7 +381,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.LookAndFeel.SkinName = "Money Twins";
             this.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.MaximumSize = new System.Drawing.Size(693, 446);
+            this.MaximumSize = new System.Drawing.Size(699, 446);
             this.MinimumSize = new System.Drawing.Size(693, 446);
             this.Name = "FRM_MachinesFollowUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -393,11 +393,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cbTypeOfMachines.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seRentOfDays.Properties)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.cbTypeOfMachines.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.seRentOfDays.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

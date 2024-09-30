@@ -1,4 +1,4 @@
-﻿namespace EmployeePro.View.FallowUP
+﻿namespace SagaProjectV2.View.FallowUP
 {
     partial class FRM_MaterialsFollow_up
     {
@@ -39,12 +39,12 @@
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.txtProjectName = new DevExpress.XtraEditors.TextEdit();
             this.cbWorkItem = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.sePrice = new DevExpress.XtraEditors.SpinEdit();
             this.seActualQuntity = new DevExpress.XtraEditors.SpinEdit();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtProjectName.Properties)).BeginInit();
@@ -188,18 +188,6 @@
             this.cbWorkItem.Size = new System.Drawing.Size(252, 20);
             this.cbWorkItem.TabIndex = 48;
             // 
-            // labelControl5
-            // 
-            this.labelControl5.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(215, 156);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(42, 19);
-            this.labelControl5.TabIndex = 55;
-            this.labelControl5.Text = "Price :";
-            // 
             // sePrice
             // 
             this.sePrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -243,13 +231,13 @@
             this.tableLayoutPanel2.Controls.Add(this.cbWorkItem, 2, 2);
             this.tableLayoutPanel2.Controls.Add(this.labelControl3, 1, 3);
             this.tableLayoutPanel2.Controls.Add(this.seActualQuntity, 2, 3);
-            this.tableLayoutPanel2.Controls.Add(this.labelControl5, 1, 4);
             this.tableLayoutPanel2.Controls.Add(this.sePrice, 2, 4);
             this.tableLayoutPanel2.Controls.Add(this.labelControl4, 1, 5);
             this.tableLayoutPanel2.Controls.Add(this.dateEdit1, 2, 5);
             this.tableLayoutPanel2.Controls.Add(this.simpleButton1, 1, 6);
             this.tableLayoutPanel2.Controls.Add(this.sbShowAll, 2, 6);
             this.tableLayoutPanel2.Controls.Add(this.simpleButton2, 1, 7);
+            this.tableLayoutPanel2.Controls.Add(this.labelControl5, 1, 4);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(2, 39);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -299,6 +287,18 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(685, 418);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
+            // labelControl5
+            // 
+            this.labelControl5.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Appearance.Options.UseFont = true;
+            this.labelControl5.Location = new System.Drawing.Point(172, 156);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(85, 19);
+            this.labelControl5.TabIndex = 57;
+            this.labelControl5.Text = "Actual Cost :";
+            // 
             // FRM_MaterialsFollow_up
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -307,7 +307,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.LookAndFeel.SkinName = "Money Twins";
             this.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.MaximumSize = new System.Drawing.Size(693, 446);
+            this.MaximumSize = new System.Drawing.Size(699, 446);
             this.MinimumSize = new System.Drawing.Size(693, 446);
             this.Name = "FRM_MaterialsFollow_up";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -338,11 +338,11 @@
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.TextEdit txtProjectName;
         private DevExpress.XtraEditors.ComboBoxEdit cbWorkItem;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.SpinEdit sePrice;
         private DevExpress.XtraEditors.SpinEdit seActualQuntity;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private DevExpress.XtraEditors.LabelControl labelControl5;
     }
 }

@@ -5,9 +5,9 @@ using System.Windows.Forms;
 using DevExpress.UserSkins;
 using DevExpress.Skins;
 using DevExpress.LookAndFeel;
-using EmployeePro.View;
+using SagaProjectV2.View;
 
-namespace EmployeePro
+namespace SagaProjectV2
 {
     static class Program
     {

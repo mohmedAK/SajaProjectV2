@@ -1,4 +1,4 @@
-﻿namespace EmployeePro.View.FallowUP
+﻿namespace SagaProjectV2.View.FallowUP
 {
     partial class FRM_CostMachinesFollow_up
     {

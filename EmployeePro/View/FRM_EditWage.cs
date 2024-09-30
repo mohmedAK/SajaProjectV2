@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 
-namespace EmployeePro.View
+namespace SagaProjectV2.View
 {
     public partial class FRM_EditWage : DevExpress.XtraEditors.XtraForm
     {

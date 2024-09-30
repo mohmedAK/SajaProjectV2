@@ -1,4 +1,4 @@
-﻿namespace EmployeePro.View.FallowUP
+﻿namespace SagaProjectV2.View.FallowUP
 {
     partial class FRM_LaborFollowUp
     {
@@ -32,32 +32,32 @@
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.txtProjectName = new DevExpress.XtraEditors.TextEdit();
-            this.seNumOfLabor = new DevExpress.XtraEditors.SpinEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.sbShowAll = new DevExpress.XtraEditors.SimpleButton();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.cbWorkItem = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.cbLaborType = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.seNumOfLabor = new DevExpress.XtraEditors.SpinEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.seWorkDay = new DevExpress.XtraEditors.SpinEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.sbShowAll = new DevExpress.XtraEditors.SimpleButton();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtProjectName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.seNumOfLabor.Properties)).BeginInit();
-            this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbWorkItem.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbLaborType.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seNumOfLabor.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.seWorkDay.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -126,6 +126,94 @@
             this.txtProjectName.Size = new System.Drawing.Size(208, 24);
             this.txtProjectName.TabIndex = 16;
             // 
+            // labelControl1
+            // 
+            this.labelControl1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Location = new System.Drawing.Point(162, 46);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(97, 19);
+            this.labelControl1.TabIndex = 1;
+            this.labelControl1.Text = "Project Name:";
+            // 
+            // labelControl7
+            // 
+            this.labelControl7.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelControl7.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl7.Appearance.Options.UseFont = true;
+            this.labelControl7.Location = new System.Drawing.Point(134, 156);
+            this.labelControl7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(125, 19);
+            this.labelControl7.TabIndex = 24;
+            this.labelControl7.Text = "Number of Labor :";
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl8.Appearance.Options.UseFont = true;
+            this.labelControl8.Location = new System.Drawing.Point(130, 120);
+            this.labelControl8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(129, 19);
+            this.labelControl8.TabIndex = 26;
+            this.labelControl8.Text = "Select Labor Type :";
+            // 
+            // cbWorkItem
+            // 
+            this.cbWorkItem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbWorkItem.Location = new System.Drawing.Point(265, 82);
+            this.cbWorkItem.Name = "cbWorkItem";
+            this.cbWorkItem.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbWorkItem.Properties.Items.AddRange(new object[] {
+            "اعمال الحفريات",
+            "اعمال الركائز",
+            "اعمال قبعات الركائز",
+            "اعمال الاعمدة",
+            "قبعات الاعمدة",
+            "الركائز المطاطية",
+            "الروافد",
+            "اعمال الاكساء",
+            "اعمال الانهائات"});
+            this.cbWorkItem.Size = new System.Drawing.Size(208, 20);
+            this.cbWorkItem.TabIndex = 48;
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Location = new System.Drawing.Point(172, 83);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(87, 19);
+            this.labelControl2.TabIndex = 47;
+            this.labelControl2.Text = "Work Items :";
+            // 
+            // cbLaborType
+            // 
+            this.cbLaborType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbLaborType.Location = new System.Drawing.Point(265, 119);
+            this.cbLaborType.Name = "cbLaborType";
+            this.cbLaborType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbLaborType.Properties.Items.AddRange(new object[] {
+            "اعمال الحفريات",
+            "اعمال الركائز",
+            "اعمال قبعات الركائز",
+            "اعمال الاعمدة",
+            "قبعات الاعمدة",
+            "الركائز المطاطية",
+            "الروافد",
+            "اعمال الاكساء",
+            "اعمال الانهائات"});
+            this.cbLaborType.Size = new System.Drawing.Size(208, 20);
+            this.cbLaborType.TabIndex = 49;
+            // 
             // seNumOfLabor
             // 
             this.seNumOfLabor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -141,41 +229,57 @@
             this.seNumOfLabor.Size = new System.Drawing.Size(208, 20);
             this.seNumOfLabor.TabIndex = 33;
             // 
-            // labelControl1
+            // labelControl3
             // 
-            this.labelControl1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(162, 46);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(97, 19);
-            this.labelControl1.TabIndex = 1;
-            this.labelControl1.Text = "Project Name:";
+            this.labelControl3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Location = new System.Drawing.Point(150, 198);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(109, 19);
+            this.labelControl3.TabIndex = 50;
+            this.labelControl3.Text = "No. Work days :";
             // 
-            // labelControl8
+            // seWorkDay
             // 
-            this.labelControl8.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(175, 120);
-            this.labelControl8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(84, 19);
-            this.labelControl8.TabIndex = 26;
-            this.labelControl8.Text = "Labor Type :";
+            this.seWorkDay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.seWorkDay.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.seWorkDay.Location = new System.Drawing.Point(265, 198);
+            this.seWorkDay.Name = "seWorkDay";
+            this.seWorkDay.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.seWorkDay.Size = new System.Drawing.Size(208, 20);
+            this.seWorkDay.TabIndex = 51;
             // 
-            // labelControl7
+            // labelControl4
             // 
-            this.labelControl7.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(134, 156);
-            this.labelControl7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(125, 19);
-            this.labelControl7.TabIndex = 24;
-            this.labelControl7.Text = "Number of Labor :";
+            this.labelControl4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Location = new System.Drawing.Point(163, 247);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(96, 19);
+            this.labelControl4.TabIndex = 52;
+            this.labelControl4.Text = "Current Date :";
+            // 
+            // dateEdit1
+            // 
+            this.dateEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dateEdit1.EditValue = null;
+            this.dateEdit1.Location = new System.Drawing.Point(265, 247);
+            this.dateEdit1.Name = "dateEdit1";
+            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit1.Size = new System.Drawing.Size(208, 20);
+            this.dateEdit1.TabIndex = 53;
             // 
             // simpleButton2
             // 
@@ -232,110 +336,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(685, 418);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
-            // labelControl2
-            // 
-            this.labelControl2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(172, 83);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(87, 19);
-            this.labelControl2.TabIndex = 47;
-            this.labelControl2.Text = "Work Items :";
-            // 
-            // cbWorkItem
-            // 
-            this.cbWorkItem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbWorkItem.Location = new System.Drawing.Point(265, 82);
-            this.cbWorkItem.Name = "cbWorkItem";
-            this.cbWorkItem.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbWorkItem.Properties.Items.AddRange(new object[] {
-            "اعمال الحفريات",
-            "اعمال الركائز",
-            "اعمال قبعات الركائز",
-            "اعمال الاعمدة",
-            "قبعات الاعمدة",
-            "الركائز المطاطية",
-            "الروافد",
-            "اعمال الاكساء",
-            "اعمال الانهائات"});
-            this.cbWorkItem.Size = new System.Drawing.Size(208, 20);
-            this.cbWorkItem.TabIndex = 48;
-            // 
-            // cbLaborType
-            // 
-            this.cbLaborType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbLaborType.Location = new System.Drawing.Point(265, 119);
-            this.cbLaborType.Name = "cbLaborType";
-            this.cbLaborType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbLaborType.Properties.Items.AddRange(new object[] {
-            "اعمال الحفريات",
-            "اعمال الركائز",
-            "اعمال قبعات الركائز",
-            "اعمال الاعمدة",
-            "قبعات الاعمدة",
-            "الركائز المطاطية",
-            "الروافد",
-            "اعمال الاكساء",
-            "اعمال الانهائات"});
-            this.cbLaborType.Size = new System.Drawing.Size(208, 20);
-            this.cbLaborType.TabIndex = 49;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(150, 198);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(109, 19);
-            this.labelControl3.TabIndex = 50;
-            this.labelControl3.Text = "No. Work days :";
-            // 
-            // seWorkDay
-            // 
-            this.seWorkDay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.seWorkDay.EditValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.seWorkDay.Location = new System.Drawing.Point(265, 198);
-            this.seWorkDay.Name = "seWorkDay";
-            this.seWorkDay.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.seWorkDay.Size = new System.Drawing.Size(208, 20);
-            this.seWorkDay.TabIndex = 51;
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(163, 247);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(96, 19);
-            this.labelControl4.TabIndex = 52;
-            this.labelControl4.Text = "Current Date :";
-            // 
-            // dateEdit1
-            // 
-            this.dateEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(265, 247);
-            this.dateEdit1.Name = "dateEdit1";
-            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Size = new System.Drawing.Size(208, 20);
-            this.dateEdit1.TabIndex = 53;
-            // 
             // FRM_LaborFollowUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -344,7 +344,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.LookAndFeel.SkinName = "Money Twins";
             this.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.MaximumSize = new System.Drawing.Size(693, 446);
+            this.MaximumSize = new System.Drawing.Size(699, 446);
             this.MinimumSize = new System.Drawing.Size(693, 446);
             this.Name = "FRM_LaborFollowUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -353,13 +353,13 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtProjectName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.seNumOfLabor.Properties)).EndInit();
-            this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.cbWorkItem.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbLaborType.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seNumOfLabor.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.seWorkDay.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

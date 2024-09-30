@@ -7,11 +7,11 @@ using System.Data.SqlClient;
 using System.Data;
 using Dapper;
 
-namespace EmployeePro.Factory
+namespace SagaProjectV2.Factory
 {
    public class Repository<T>:Database,IRepository<T> where T:class
     {
-       private IDbConnection connection = new SqlConnection(conVal("EmployeePro"));
+       private IDbConnection connection = new SqlConnection(conVal("sagaDB"));
        
 
         public void Execute(string sqlr)
