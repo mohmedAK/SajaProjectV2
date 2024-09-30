@@ -120,8 +120,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\CmdContract.cs" />
     <Compile Include="Controller\CmdEmployee.cs" />
+    <Compile Include="Controller\CmdLaborDate.cs" />
+    <Compile Include="Controller\CmdLaborFallow.cs" />
+    <Compile Include="Controller\CmdMachineData.cs" />
+    <Compile Include="Controller\CmdMachineFallow.cs" />
+    <Compile Include="Controller\CmdMaterialData.cs" />
+    <Compile Include="Controller\CmdProjectInformation.cs" />
+    <Compile Include="Controller\CmdProjectItemData.cs" />
     <Compile Include="Controller\CmdWage.cs" />
+    <Compile Include="Controller\CmdWorkProgressFallow.cs" />
     <Compile Include="Factory\Database.cs" />
     <Compile Include="Factory\IRepository.cs" />
     <Compile Include="Factory\Repository.cs" />
