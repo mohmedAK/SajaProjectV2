@@ -1,6 +1,6 @@
 ﻿namespace SajaProjectV2.View.DataForms
 {
-    partial class FRM_GeniralProjectInformation
+    partial class FRM_GeneralProjectInformation
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_GeniralProjectInformation));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_GeneralProjectInformation));
             this.txtLocation = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.txtProjectName = new DevExpress.XtraEditors.TextEdit();

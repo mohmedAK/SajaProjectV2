@@ -16,7 +16,7 @@ namespace SajaProjectV2.Controller
         {
             try
             {
-                return cmd.GetAll("SELECT Id, ProjectName, Location, OwnerName, Penalties, StartDate, FinishDate, Details FROM projects_information").ToList();
+                return cmd.GetAll("SELECT Id, ProjectName, Location, OwnerName, Penalties, StartDate, FinishDate, Details,Value FROM projects_information").ToList();
             }
             catch (Exception)
             {
@@ -44,7 +44,7 @@ namespace SajaProjectV2.Controller
             try
             {
                 // Update project details based on project ID
-                cmd.ExecuteParam("UPDATE projects_information SET ProjectName = @ProjectName, Location = @Location, OwnerName = @OwnerName, Penalties = @Penalties, StartDate = @StartDate, FinishDate = @FinishDate, Details = @Details WHERE Id = @Id", project);
+                cmd.ExecuteParam("UPDATE projects_information SET ProjectName = @ProjectName, Location = @Location, OwnerName = @OwnerName, Penalties = @Penalties, StartDate = @StartDate, FinishDate = @FinishDate, Details = @Details,Value = @Value WHERE Id = @Id", project);
                 return true;
             }
             catch (Exception)
@@ -65,6 +65,20 @@ namespace SajaProjectV2.Controller
             catch (Exception)
             {
                 return false;
+            }
+        }
+
+        public List<CLS_ProjectInformation> GetProjectById(int projectId)
+        {
+            try
+            {
+                // Get project by ID
+                return cmd.GetById("Select * FROM projects_information WHERE Id = @Id", new CLS_ProjectInformation { Id = projectId }).ToList(); 
+               
+            }
+            catch (Exception)
+            {
+                return null;
             }
         }
 

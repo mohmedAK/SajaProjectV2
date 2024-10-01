@@ -38,7 +38,12 @@ CREATE TABLE `contract` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
-
+CREATE TABLE `work_item` (
+`Id` INT(10) NOT NULL ,
+ `Items` VARCHAR(250) NULL ,
+  `Cost` REAL NULL , 
+  `ContractIdFk` INT NULL ,
+   PRIMARY KEY (`Id`(10))) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;;
 --
 -- Table structure for table `employee`
 --
@@ -208,6 +213,10 @@ ALTER TABLE `contract`
   ADD PRIMARY KEY (`Id`),
   ADD KEY `ProjectIdFk` (`ProjectIdFk`);
 
+
+ALTER TABLE `work_item`
+  ADD PRIMARY KEY (`Id`),
+  ADD KEY `ContractIdFk` (`ContractIdFk`);
 --
 -- Indexes for table `employee`
 --

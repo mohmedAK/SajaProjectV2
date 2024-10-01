@@ -40,62 +40,62 @@
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
-            this.gcWage = new DevExpress.XtraGrid.GridControl();
+            this.gcProjectInformation = new DevExpress.XtraGrid.GridControl();
             this.cLSProjectInformationBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gvWage = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gvProjectInformation = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colProId = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colProName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colOwner = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colValue = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colLocation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStartDate = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colFinshDate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colEdit = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repEdit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.colDelete = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repDelete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.colProjectId = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colStartDate = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colFinshDate = new DevExpress.XtraGrid.Columns.GridColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.gcWage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gcProjectInformation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLSProjectInformationBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvWage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvProjectInformation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repEdit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repDelete)).BeginInit();
             this.SuspendLayout();
             // 
-            // gcWage
+            // gcProjectInformation
             // 
-            this.gcWage.DataSource = this.cLSProjectInformationBindingSource;
-            this.gcWage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gcWage.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gcWage.Location = new System.Drawing.Point(0, 0);
-            this.gcWage.MainView = this.gvWage;
-            this.gcWage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gcWage.Name = "gcWage";
-            this.gcWage.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.gcProjectInformation.DataSource = this.cLSProjectInformationBindingSource;
+            this.gcProjectInformation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gcProjectInformation.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gcProjectInformation.Location = new System.Drawing.Point(0, 0);
+            this.gcProjectInformation.MainView = this.gvProjectInformation;
+            this.gcProjectInformation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gcProjectInformation.Name = "gcProjectInformation";
+            this.gcProjectInformation.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repEdit,
             this.repDelete});
-            this.gcWage.Size = new System.Drawing.Size(551, 550);
-            this.gcWage.TabIndex = 15;
-            this.gcWage.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gvWage});
+            this.gcProjectInformation.Size = new System.Drawing.Size(897, 550);
+            this.gcProjectInformation.TabIndex = 15;
+            this.gcProjectInformation.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gvProjectInformation});
             // 
             // cLSProjectInformationBindingSource
             // 
             this.cLSProjectInformationBindingSource.DataSource = typeof(SajaProjectV2.Model.CLS_ProjectInformation);
             // 
-            // gvWage
+            // gvProjectInformation
             // 
-            this.gvWage.Appearance.HeaderPanel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.gvWage.Appearance.HeaderPanel.Options.UseFont = true;
-            this.gvWage.Appearance.HeaderPanel.Options.UseTextOptions = true;
-            this.gvWage.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gvWage.Appearance.HeaderPanel.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.gvWage.Appearance.Row.Font = new System.Drawing.Font("Calibri", 10.2F);
-            this.gvWage.Appearance.Row.Options.UseFont = true;
-            this.gvWage.Appearance.Row.Options.UseTextOptions = true;
-            this.gvWage.Appearance.Row.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gvWage.Appearance.Row.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.gvWage.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gvProjectInformation.Appearance.HeaderPanel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.gvProjectInformation.Appearance.HeaderPanel.Options.UseFont = true;
+            this.gvProjectInformation.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.gvProjectInformation.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gvProjectInformation.Appearance.HeaderPanel.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gvProjectInformation.Appearance.Row.Font = new System.Drawing.Font("Calibri", 10.2F);
+            this.gvProjectInformation.Appearance.Row.Options.UseFont = true;
+            this.gvProjectInformation.Appearance.Row.Options.UseTextOptions = true;
+            this.gvProjectInformation.Appearance.Row.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gvProjectInformation.Appearance.Row.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gvProjectInformation.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colProId,
             this.colProName,
             this.colOwner,
@@ -105,10 +105,10 @@
             this.colFinshDate,
             this.colEdit,
             this.colDelete});
-            this.gvWage.DetailHeight = 284;
-            this.gvWage.GridControl = this.gcWage;
-            this.gvWage.Name = "gvWage";
-            this.gvWage.OptionsView.ShowGroupPanel = false;
+            this.gvProjectInformation.DetailHeight = 284;
+            this.gvProjectInformation.GridControl = this.gcProjectInformation;
+            this.gvProjectInformation.Name = "gvProjectInformation";
+            this.gvProjectInformation.OptionsView.ShowGroupPanel = false;
             // 
             // colProId
             // 
@@ -151,6 +151,9 @@
             this.colValue.Caption = "Value";
             this.colValue.FieldName = "Value";
             this.colValue.Name = "colValue";
+            this.colValue.OptionsColumn.AllowEdit = false;
+            this.colValue.OptionsColumn.AllowFocus = false;
+            this.colValue.OptionsColumn.AllowMove = false;
             this.colValue.Visible = true;
             this.colValue.VisibleIndex = 6;
             // 
@@ -159,8 +162,33 @@
             this.colLocation.Caption = "location";
             this.colLocation.FieldName = "Location";
             this.colLocation.Name = "colLocation";
+            this.colLocation.OptionsColumn.AllowEdit = false;
+            this.colLocation.OptionsColumn.AllowFocus = false;
+            this.colLocation.OptionsColumn.AllowMove = false;
             this.colLocation.Visible = true;
             this.colLocation.VisibleIndex = 5;
+            // 
+            // colStartDate
+            // 
+            this.colStartDate.Caption = "Start";
+            this.colStartDate.FieldName = "StartDate";
+            this.colStartDate.Name = "colStartDate";
+            this.colStartDate.OptionsColumn.AllowEdit = false;
+            this.colStartDate.OptionsColumn.AllowFocus = false;
+            this.colStartDate.OptionsColumn.AllowMove = false;
+            this.colStartDate.Visible = true;
+            this.colStartDate.VisibleIndex = 3;
+            // 
+            // colFinshDate
+            // 
+            this.colFinshDate.Caption = "Finsh";
+            this.colFinshDate.FieldName = "FinishDate";
+            this.colFinshDate.Name = "colFinshDate";
+            this.colFinshDate.OptionsColumn.AllowEdit = false;
+            this.colFinshDate.OptionsColumn.AllowFocus = false;
+            this.colFinshDate.OptionsColumn.AllowMove = false;
+            this.colFinshDate.Visible = true;
+            this.colFinshDate.VisibleIndex = 4;
             // 
             // colEdit
             // 
@@ -212,35 +240,20 @@
             this.colProjectId.OptionsColumn.AllowMove = false;
             this.colProjectId.Width = 80;
             // 
-            // colStartDate
-            // 
-            this.colStartDate.Caption = "Start";
-            this.colStartDate.FieldName = "StartDate";
-            this.colStartDate.Name = "colStartDate";
-            this.colStartDate.Visible = true;
-            this.colStartDate.VisibleIndex = 3;
-            // 
-            // colFinshDate
-            // 
-            this.colFinshDate.Caption = "Finsh";
-            this.colFinshDate.FieldName = "FinishDate";
-            this.colFinshDate.Name = "colFinshDate";
-            this.colFinshDate.Visible = true;
-            this.colFinshDate.VisibleIndex = 4;
-            // 
             // FRM_Show_All_Projects
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(551, 550);
-            this.Controls.Add(this.gcWage);
+            this.ClientSize = new System.Drawing.Size(897, 550);
+            this.Controls.Add(this.gcProjectInformation);
             this.LookAndFeel.SkinName = "Money Twins";
             this.LookAndFeel.UseDefaultLookAndFeel = false;
             this.Name = "FRM_Show_All_Projects";
-            this.Text = "FRM_Show_All_Projects";
-            ((System.ComponentModel.ISupportInitialize)(this.gcWage)).EndInit();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "All Projects";
+            ((System.ComponentModel.ISupportInitialize)(this.gcProjectInformation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLSProjectInformationBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvWage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvProjectInformation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repEdit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repDelete)).EndInit();
             this.ResumeLayout(false);
@@ -249,8 +262,8 @@
 
         #endregion
 
-        private DevExpress.XtraGrid.GridControl gcWage;
-        private DevExpress.XtraGrid.Views.Grid.GridView gvWage;
+        private DevExpress.XtraGrid.GridControl gcProjectInformation;
+        private DevExpress.XtraGrid.Views.Grid.GridView gvProjectInformation;
         private DevExpress.XtraGrid.Columns.GridColumn colProName;
         private DevExpress.XtraGrid.Columns.GridColumn colOwner;
         private DevExpress.XtraGrid.Columns.GridColumn colEdit;

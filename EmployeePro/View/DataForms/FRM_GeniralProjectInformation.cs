@@ -1,31 +1,62 @@
 ﻿using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using SajaProjectV2.Controller;
 using SajaProjectV2.Model;
- 
 
 namespace SajaProjectV2.View.DataForms
 {
-    public partial class FRM_GeniralProjectInformation : DevExpress.XtraEditors.XtraForm
+    public partial class FRM_GeneralProjectInformation : XtraForm
     {
-        CmdProjectInformation CmdProjectInformation = new CmdProjectInformation();
-        public FRM_GeniralProjectInformation()
+        private readonly CmdProjectInformation _cmdProjectInformation = new CmdProjectInformation();
+        private bool _isUpdate;
+        private int _projectId;
+
+        public FRM_GeneralProjectInformation()
         {
             InitializeComponent();
+            _isUpdate = false;
+
+            this._projectId =  _cmdProjectInformation.getNewId();
         }
 
-        void AddProjectInfo()
+        public FRM_GeneralProjectInformation(int projectId) : this()
         {
-            CLS_ProjectInformation projectInformation = new CLS_ProjectInformation()
+            _isUpdate = true;
+            _projectId = projectId;
+            RetrieveData(projectId);
+            EnableButton(true);
+            btnApply.Text = "Update";
+        }
+
+        private void RetrieveData(int id)
+        {
+            var projects = _cmdProjectInformation.GetProjectById(id);
+            if (projects != null && projects.Count > 0 && projects[0] != null)
             {
+                var project = projects[0];
+                txtDetails.Text = project.Details ?? string.Empty;
+                txtLocation.Text = project.Location ?? string.Empty;
+                txtOwnerName.Text = project.OwnerName ?? string.Empty;
+                txtPenalties.Text = project.Penalties ?? string.Empty;
+                txtValue.Text = project.Value ?? string.Empty;
+                txtProjectName.Text = project.ProjectName ?? string.Empty;
+                dtStart.Text = project.StartDate.ToString();
+                dtFinsh.Text = project.FinishDate.ToString();
+            }
+            else
+            {
+                XtraMessageBox.Show("Project information could not be retrieved.");
+            }
+        }
+
+        private void AddProjectInfo()
+        {
+            var projectInformation = new CLS_ProjectInformation
+            {
+                Id = _projectId,
                 ProjectName = txtProjectName.Text,
                 Value = txtValue.Text,
                 Location = txtLocation.Text,
@@ -35,126 +66,86 @@ namespace SajaProjectV2.View.DataForms
                 StartDate = dtStart.DateTime,
                 FinishDate = dtFinsh.DateTime,
             };
-            CmdProjectInformation.AddProject(projectInformation);
-        }
-
-
-
-
-        private void sbContract_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FRM_ContractingData fRM_ContractingData = new FRM_ContractingData();
-            fRM_ContractingData.Show();
-        }
-
-        private void sbLabor_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FRM_LaborData fRM_labor = new FRM_LaborData();
-            fRM_labor.Show();
-        }
-
-        private void simpleButton3_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FRM_MachinesData fRM_MachinesData = new FRM_MachinesData();
-            fRM_MachinesData.Show();
-        }
-
-        private void sbM_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FRM_MaterialsData fRM_MaterialsData = new FRM_MaterialsData();
-            fRM_MaterialsData.Show();
-             
-        }
-
-        private void simpleButton1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FRM_Project_Item_Data fRM_Project_Item = new FRM_Project_Item_Data();
-            fRM_Project_Item.Show();
+            _cmdProjectInformation.AddProject(projectInformation);
         }
 
         private void btnApply_Click(object sender, EventArgs e)
         {
-            if (checkIsNull())
+            if (CheckIsNull())
             {
                 XtraMessageBox.Show("Please Fill All Fields");
+                return;
             }
-            else
+
+            if (XtraMessageBox.Show("Are you sure from data", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                if(XtraMessageBox.Show("Are you sure from data ","Warining",MessageBoxButtons.YesNo,MessageBoxIcon.Warning) == DialogResult.Yes)
+                if (_isUpdate)
+                {
+                    var projectInformation = new CLS_ProjectInformation
+                    {
+                        Id = _projectId,
+                        ProjectName = txtProjectName.Text,
+                        Value = txtValue.Text,
+                        Location = txtLocation.Text,
+                        OwnerName = txtOwnerName.Text,
+                        Penalties = txtPenalties.Text,
+                        Details = txtDetails.Text,
+                        StartDate = dtStart.DateTime,
+                        FinishDate = dtFinsh.DateTime,
+                    };
+                    _cmdProjectInformation.EditProject(projectInformation);
+                }
+                else
                 {
                     AddProjectInfo();
-                    enableButton(true);
                 }
-               
+                EnableButton(true);
             }
-
         }
 
-
-        void enableButton(bool flag)
+        private void sbContract_Click(object sender, EventArgs e)
         {
-            if (flag)
-            {
-                this.sbLabor.Enabled = true;
-                this.sbItemData.Enabled = true;
-                this.sbMachinesData.Enabled = true;
-                this.sbMaterial.Enabled = true;
-                this.sbContract.Enabled = true;
-
-                btnApply.Enabled = false;
-
-                txtLocation.Enabled = false;
-                txtOwnerName.Enabled = false;
-                txtProjectName.Enabled = false;
-                txtPenalties.Enabled = false;
-                txtDetails.Enabled = false;
-                txtValue.Enabled = false;
-                dtFinsh.Enabled = false;
-                dtStart.Enabled = false;
-
-
-            }
-            else
-            {
-                this.sbLabor.Enabled = false;
-                this.sbItemData.Enabled = false;
-                this.sbMachinesData.Enabled = false;
-                this.sbMaterial.Enabled = false;
-                this.sbContract.Enabled = false;
-
-                btnApply.Enabled = true;
-                txtLocation.Enabled = true;
-                txtOwnerName.Enabled = true;
-                txtProjectName.Enabled = true;
-                txtPenalties.Enabled = true;
-                txtDetails.Enabled = true;
-                txtValue.Enabled = true;
-                dtFinsh.Enabled = true;
-                dtStart.Enabled = true;
-            }
-          
+            Hide();
+            new FRM_ContractingData(_projectId).ShowDialog();
         }
 
-
-        bool checkIsNull()
+        private void sbLabor_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtLocation.Text) ||
-                string.IsNullOrEmpty(txtOwnerName.Text) ||
-                string.IsNullOrEmpty(txtProjectName.Text) ||
-                string.IsNullOrEmpty(txtPenalties.Text) ||
-                string.IsNullOrEmpty(txtDetails.Text))
+            Hide();
+            new FRM_LaborData().ShowDialog();
+        }
+
+        private void simpleButton3_Click(object sender, EventArgs e)
+        {
+            Hide();
+            new FRM_MachinesData().ShowDialog();
+        }
+
+        private void sbM_Click(object sender, EventArgs e)
+        {
+            Hide();
+            new FRM_MaterialsData().ShowDialog();
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            new FRM_Project_Item_Data().ShowDialog();
+        }
+
+        private void EnableButton(bool flag)
+        {
+            var controls = new[] { sbLabor, sbItemData, sbMachinesData, sbMaterial, sbContract, btnApply };
+            foreach (var control in controls)
             {
-                return true;
+                control.Enabled = flag;
             }
-            else
-            {
-                return false;
-            }
+        }
+
+        private bool CheckIsNull()
+        {
+            var controlsToCheck = new[] {txtLocation, txtOwnerName, txtProjectName, txtPenalties, txtDetails, txtValue, dtFinsh, dtStart };
+            return controlsToCheck.Any(control => string.IsNullOrEmpty(control?.Text));
         }
 
         private void FRM_GeniralProjectInformation_FormClosed(object sender, FormClosedEventArgs e)
@@ -164,9 +155,8 @@ namespace SajaProjectV2.View.DataForms
 
         private void sbBack_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FRM_BasicProjectData fRM_BasicProjectData = new FRM_BasicProjectData();
-            fRM_BasicProjectData.Show();
+            Hide();
+            new FRM_BasicProjectData().Show();
         }
     }
 }

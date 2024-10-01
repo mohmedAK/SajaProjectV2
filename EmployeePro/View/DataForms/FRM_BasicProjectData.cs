@@ -21,7 +21,7 @@ namespace SajaProjectV2.View.DataForms
         private void sbNewProject_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FRM_GeniralProjectInformation fRM_GeniralProjectInformation = new FRM_GeniralProjectInformation();
+            FRM_GeneralProjectInformation fRM_GeniralProjectInformation = new FRM_GeneralProjectInformation();
             fRM_GeniralProjectInformation.Show();
         }
 
