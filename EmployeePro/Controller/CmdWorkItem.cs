@@ -11,11 +11,25 @@ namespace SajaProjectV2.Controller
         Repository<CLS_WorkItem> cmd = new Repository<CLS_WorkItem>();
 
         // Get all work items from the WorkItem table
-        public List<CLS_WorkItem> GetAllWorkItems()
+        public List<CLS_WorkItem> GetAllWorkItems(int projectId)
         {
             try
             {
-                return cmd.GetAll("SELECT Id, Item, ItemCost, ContractIdFk FROM WorkItem").ToList();
+                return cmd.GetAll($"SELECT * FROM work_item WHERE ProjectIdFk = {projectId}").ToList();
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+
+
+
+        public List<CLS_WorkItem> GetWorkItemsById(int ProjectIdFk)
+        {
+            try
+            {
+                return cmd.GetById("SELECT * FROM work_item WHERE ProjectIdFk = @ProjectIdFk", new CLS_WorkItem { ProjectIdFk = ProjectIdFk }).ToList();
             }
             catch (Exception)
             {
@@ -28,7 +42,7 @@ namespace SajaProjectV2.Controller
         {
             try
             {
-                cmd.ExecuteParam("INSERT INTO WorkItem (Id, Item, ItemCost, ContractIdFk) VALUES (@Id, @Item, @ItemCost, @ContractIdFk)", workItem);
+                cmd.ExecuteParam("INSERT INTO work_item (Id, Items, ItemCost, ProjectIdFk) VALUES (@Id, @Items, @ItemCost, @ProjectIdFk)", workItem);
             }
             catch (Exception e)
             {
@@ -41,7 +55,7 @@ namespace SajaProjectV2.Controller
         {
             try
             {
-                cmd.ExecuteParam("UPDATE WorkItem SET Item = @Item, ItemCost = @ItemCost, ContractIdFk = @ContractIdFk WHERE Id = @Id", workItem);
+                cmd.ExecuteParam("UPDATE work_item SET Item = @Item, ItemCost = @ItemCost, ProjectIdFk = @ProjectIdFk WHERE Id = @Id", workItem);
                 return true;
             }
             catch (Exception)
@@ -55,7 +69,7 @@ namespace SajaProjectV2.Controller
         {
             try
             {
-                cmd.ExecuteParam("DELETE FROM WorkItem WHERE Id = @Id", new CLS_WorkItem { Id = id });
+                cmd.ExecuteParam("DELETE FROM work_item WHERE Id = @Id", new CLS_WorkItem { Id = id });
                 return true;
             }
             catch (Exception)
@@ -64,15 +78,42 @@ namespace SajaProjectV2.Controller
             }
         }
 
+
+        public bool RemoveAllWorkItem(int ContractId)
+        {
+            try
+            {
+                cmd.ExecuteParam("DELETE FROM work_item WHERE ProjectIdFk = @ProjectIdFk", new CLS_WorkItem { ProjectIdFk = ContractId });
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
         // Get a new work item ID (increments by 1 from the max Id)
         public int GetNewId()
         {
-            List<CLS_WorkItem> workItems = cmd.GetAll("SELECT Id FROM WorkItem WHERE Id = (SELECT MAX(Id) FROM WorkItem)").ToList();
+            List<CLS_WorkItem> workItems = cmd.GetAll("SELECT Id FROM work_item WHERE Id = (SELECT MAX(Id) FROM work_item)").ToList();
             if (workItems.Count > 0)
             {
                 return workItems[0].Id + 1;
             }
             return 1;
+        }
+
+        // Update the contract field to true for a specific work item
+        public bool UpdateContractFlag(int workItemId,bool flag)
+        {
+            try
+            {
+                cmd.ExecuteParam($"UPDATE work_item SET contract = {flag} WHERE Id = @Id", new CLS_WorkItem { Id = workItemId });
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
     }
 }

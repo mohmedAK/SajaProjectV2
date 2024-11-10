@@ -12,11 +12,11 @@ namespace SajaProjectV2.Controller
         Repository<CLS_WorkProgressFallow> cmd = new Repository<CLS_WorkProgressFallow>();
 
         // Retrieve all records from the WorkProgressFallow table
-        public List<CLS_WorkProgressFallow> GetAllWorkProgressFallow()
+        public List<CLS_WorkProgressFallow> GetAllWorkProgressFallow(int projectId)
         {
             try
             {
-                return cmd.GetAll("SELECT Id, WorkItem, ActualQuantity, CurrentDate, ProjectIdFk FROM WorkProgressFallow").ToList();
+                return cmd.GetAll($"SELECT * FROM work_progress_fallow where ProjectIdFk = {projectId}").ToList();
             }
             catch (Exception)
             {
@@ -29,7 +29,7 @@ namespace SajaProjectV2.Controller
         {
             try
             {
-                cmd.ExecuteParam("INSERT INTO WorkProgressFallow (Id, WorkItem, ActualQuantity, CurrentDate, ProjectIdFk) VALUES (@Id, @WorkItem, @ActualQuantity, @CurrentDate, @ProjectIdFk)", progress);
+                cmd.ExecuteParam("INSERT INTO work_progress_fallow (Id, WorkItem, ActualQuantity, CurrentDate, ProjectIdFk,PlaningQuantity,PlaningCost,ActualCost,PlaningDuration,ActualDuration,A,P) VALUES (@Id, @WorkItem, @ActualQuantity, @CurrentDate, @ProjectIdFk,@PlaningQuantity,@PlaningCost,@ActualCost,@PlaningDuration,@ActualDuration,@A,@P)", progress);
             }
             catch (Exception e)
             {
@@ -42,7 +42,7 @@ namespace SajaProjectV2.Controller
         {
             try
             {
-                cmd.ExecuteParam("UPDATE WorkProgressFallow SET WorkItem = @WorkItem, ActualQuantity = @ActualQuantity, CurrentDate = @CurrentDate, ProjectIdFk = @ProjectIdFk WHERE Id = @Id", progress);
+                cmd.ExecuteParam("UPDATE work_progress_fallow SET WorkItem = @WorkItem, ActualQuantity = @ActualQuantity, CurrentDate = @CurrentDate, ProjectIdFk = @ProjectIdFk ,PlaningQuantity = @PlaningQuantity,PlaningCost = @PlaningCost ,ActualCost = @ActualCost ,PlaningDuration = @PlaningDuration ,ActualDuration = @ActualDuration , A = @A,P = @P WHERE Id = @Id", progress);
                 return true;
             }
             catch (Exception)
@@ -56,7 +56,7 @@ namespace SajaProjectV2.Controller
         {
             try
             {
-                cmd.ExecuteParam("DELETE FROM WorkProgressFallow WHERE Id = @Id", new CLS_WorkProgressFallow { Id = id });
+                cmd.ExecuteParam("DELETE FROM work_progress_fallow WHERE Id = @Id", new CLS_WorkProgressFallow { Id = id });
                 return true;
             }
             catch (Exception)
@@ -68,7 +68,7 @@ namespace SajaProjectV2.Controller
         // Get the next Id for a new entry in the WorkProgressFallow table
         public int GetNewId()
         {
-            List<CLS_WorkProgressFallow> progress = cmd.GetAll("SELECT Id FROM WorkProgressFallow WHERE Id = (SELECT MAX(Id) FROM WorkProgressFallow)").ToList();
+            List<CLS_WorkProgressFallow> progress = cmd.GetAll("SELECT Id FROM work_progress_fallow WHERE Id = (SELECT MAX(Id) FROM work_progress_fallow)").ToList();
             if (progress.Count > 0)
             {
                 return progress[0].Id + 1;

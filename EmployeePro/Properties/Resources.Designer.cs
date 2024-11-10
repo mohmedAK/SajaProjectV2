@@ -59,5 +59,14 @@ namespace SajaProjectV2.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to admin.
+        /// </summary>
+        internal static string role {
+            get {
+                return ResourceManager.GetString("role", resourceCulture);
+            }
+        }
     }
 }

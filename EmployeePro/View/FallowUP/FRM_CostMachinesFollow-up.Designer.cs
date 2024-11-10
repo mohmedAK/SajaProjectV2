@@ -171,7 +171,7 @@
             this.labelControl5.TabIndex = 55;
             this.labelControl5.Text = "Maintenance Cost :";
             // 
-            // seActualCost
+            // sePlannedCost
             // 
             this.seActualCost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.seActualCost.EditValue = new decimal(new int[] {

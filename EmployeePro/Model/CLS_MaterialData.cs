@@ -16,6 +16,14 @@ namespace SajaProjectV2.Model
         public double Price { get; set; }
         public string Details { get; set; }
         public int ProjectIdFk { get; set; } // Foreign Key
+
+        public double TotalCost
+        {
+            get
+            {
+                return PlanningQuantity * Price;
+            }
+        }
     }
 
 }

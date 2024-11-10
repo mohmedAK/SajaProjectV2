@@ -9,10 +9,12 @@ namespace SajaProjectV2.Model
     public class CLS_WorkItem
     {
         public int Id { get; set; }
-        public string Item { get; set; }
+        public string Items { get; set; }
 
         public double ItemCost { get; set; }
 
-        public int ContractIdFk { get; set; } // Foreign Key
+        public bool contract { get; set; }
+
+        public int ProjectIdFk { get; set; } // Foreign Key
     }
 }

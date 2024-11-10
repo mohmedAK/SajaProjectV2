@@ -11,25 +11,35 @@ namespace SajaProjectV2.Controller
         Repository<CLS_Contract> cmd = new Repository<CLS_Contract>();
 
         // Get all contracts from the Contract table
-        public List<CLS_Contract> GetAllContracts()
+        public List<CLS_Contract> GetAllContracts(int projectId)
         {
             try
             {
-                return cmd.GetAll("SELECT Id, ContractorName, CompanyName, StartDate, FinishDate, Details, ProjectIdFk FROM Contract").ToList();
+                return cmd.GetAll($"SELECT * FROM contract where ProjectIdFk = {projectId}").ToList();
             }
             catch (Exception)
             {
                 return null;
             }
         }
-
+        public List<CLS_Contract> GetContractById(int projectId)
+        {
+            try
+            {
+                return cmd.GetById("SELECT * FROM contract WHERE ProjectIdFk = @ProjectIdFk", new CLS_Contract { ProjectIdFk = projectId }).ToList();
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
         // Add a new contract
         public void AddContract(CLS_Contract contract)
         {
             try
             {
-                cmd.ExecuteParam("INSERT INTO Contract (Id, ContractorName, CompanyName, StartDate, FinishDate, Details, ProjectIdFk) " +
-                                 "VALUES (@Id, @ContractorName, @CompanyName, @StartDate, @FinishDate, @Details, @ProjectIdFk)", contract);
+                cmd.ExecuteParam("INSERT INTO contract (Id, ContractorName, CompanyName, StartDate, FinishDate, Details, ProjectIdFk,ContractCost,WorkItem) " +
+                                 "VALUES (@Id, @ContractorName, @CompanyName, @StartDate, @FinishDate, @Details, @ProjectIdFk,@ContractCost,@WorkItem)", contract);
             }
             catch (Exception e)
             {
@@ -42,8 +52,8 @@ namespace SajaProjectV2.Controller
         {
             try
             {
-                cmd.ExecuteParam("UPDATE Contract SET ContractorName = @ContractorName, CompanyName = @CompanyName, StartDate = @StartDate, " +
-                                 "FinishDate = @FinishDate, Details = @Details, ProjectIdFk = @ProjectIdFk WHERE Id = @Id", contract);
+                cmd.ExecuteParam("UPDATE contract SET ContractorName = @ContractorName, CompanyName = @CompanyName, StartDate = @StartDate, " +
+                                 "FinishDate = @FinishDate, Details = @Details, ProjectIdFk = @ProjectIdFk, ContractCost = @ContractCost, WorkItem = @WorkItem WHERE Id = @Id", contract);
                 return true;
             }
             catch (Exception)
@@ -57,7 +67,7 @@ namespace SajaProjectV2.Controller
         {
             try
             {
-                cmd.ExecuteParam("DELETE FROM Contract WHERE Id = @Id", new CLS_Contract { Id = contractId });
+                cmd.ExecuteParam("DELETE FROM contract WHERE Id = @Id", new CLS_Contract { Id = contractId });
                 return true;
             }
             catch (Exception)
@@ -69,7 +79,7 @@ namespace SajaProjectV2.Controller
         // Get a new contract ID (increments by 1 from the max Id)
         public int GetNewId()
         {
-            List<CLS_Contract> contract = cmd.GetAll("SELECT Id FROM Contract WHERE Id = (SELECT MAX(Id) FROM Contract)").ToList();
+            List<CLS_Contract> contract = cmd.GetAll("SELECT Id FROM contract WHERE Id = (SELECT MAX(Id) FROM contract)").ToList();
             if (contract.Count > 0)
             {
                 return contract[0].Id + 1;

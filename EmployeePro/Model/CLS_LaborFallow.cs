@@ -15,6 +15,8 @@ namespace SajaProjectV2.Model
         public int WorkDay { get; set; }
         public DateTime CurrentDate { get; set; }
         public int ProjectIdFk { get; set; } // Foreign Key
+
+    
     }
 
 }

@@ -9,7 +9,6 @@ namespace SajaProjectV2.Model
     public class CLS_LaborDate
     {
         public int Id { get; set; }
-        public string Name { get; set; }
         public string LaborType { get; set; }
         public string Occupation { get; set; }
         public double Wage { get; set; }

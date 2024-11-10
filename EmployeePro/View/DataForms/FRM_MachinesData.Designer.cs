@@ -28,37 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_MachinesData));
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.txtDiscount = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.spinEdit1 = new DevExpress.XtraEditors.SpinEdit();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.comboBoxEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.spinEdit2 = new DevExpress.XtraEditors.SpinEdit();
-            this.spinEdit3 = new DevExpress.XtraEditors.SpinEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.sbShowAll = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.btnBack = new DevExpress.XtraEditors.SimpleButton();
+            this.btnAddMachine = new DevExpress.XtraEditors.SimpleButton();
+            this.txtMachine = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.ghgf = new DevExpress.XtraEditors.LabelControl();
+            this.cbOwnerShip = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.txtMachineNumber = new DevExpress.XtraEditors.TextEdit();
+            this.sbWageRent = new DevExpress.XtraEditors.SpinEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.sbWageOperation = new DevExpress.XtraEditors.SpinEdit();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.gcMachineData = new DevExpress.XtraGrid.GridControl();
+            this.cLSMachineDataBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gvMachineData = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colId = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMachineName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMachineNumber = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colWageRent = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colWageMaintenance = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colProjectIdFk = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEdit = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repEdit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.colDelete = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repDelete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDiscount.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spinEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spinEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spinEdit3.Properties)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMachine.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbOwnerShip.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMachineNumber.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sbWageRent.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sbWageOperation.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
+            this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gcMachineData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cLSMachineDataBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvMachineData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repEdit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repDelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -66,193 +91,40 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.ColumnCount = 4;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.18519F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.62963F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.7037F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.2683F));
-            this.tableLayoutPanel2.Controls.Add(this.txtDiscount, 2, 1);
-            this.tableLayoutPanel2.Controls.Add(this.labelControl1, 1, 1);
+            this.tableLayoutPanel2.ColumnCount = 5;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.21336F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.68438F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.77143F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.33083F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 1, 8);
-            this.tableLayoutPanel2.Controls.Add(this.textEdit1, 3, 8);
-            this.tableLayoutPanel2.Controls.Add(this.textEdit3, 2, 2);
-            this.tableLayoutPanel2.Controls.Add(this.labelControl7, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.spinEdit1, 2, 3);
-            this.tableLayoutPanel2.Controls.Add(this.labelControl5, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.comboBoxEdit2, 2, 4);
-            this.tableLayoutPanel2.Controls.Add(this.labelControl2, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(this.spinEdit2, 2, 5);
-            this.tableLayoutPanel2.Controls.Add(this.labelControl3, 1, 5);
-            this.tableLayoutPanel2.Controls.Add(this.spinEdit3, 2, 6);
-            this.tableLayoutPanel2.Controls.Add(this.labelControl4, 1, 6);
+            this.tableLayoutPanel2.Controls.Add(this.txtMachine, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.labelControl7, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.ghgf, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.cbOwnerShip, 2, 3);
+            this.tableLayoutPanel2.Controls.Add(this.labelControl2, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.txtMachineNumber, 2, 2);
+            this.tableLayoutPanel2.Controls.Add(this.sbWageRent, 2, 4);
+            this.tableLayoutPanel2.Controls.Add(this.labelControl3, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.sbWageOperation, 2, 5);
+            this.tableLayoutPanel2.Controls.Add(this.labelControl4, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.groupControl2, 0, 7);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(2, 39);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 9;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.651475F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.052631F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.842105F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.47368F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(708, 483);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.597417F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.893792F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.319698F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.467886F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.037316F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.329028F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.467886F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.92465F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.96233F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(938, 486);
             this.tableLayoutPanel2.TabIndex = 0;
-            // 
-            // txtDiscount
-            // 
-            this.txtDiscount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDiscount.Location = new System.Drawing.Point(277, 58);
-            this.txtDiscount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtDiscount.Name = "txtDiscount";
-            this.txtDiscount.Properties.Appearance.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiscount.Properties.Appearance.Options.UseFont = true;
-            this.txtDiscount.Size = new System.Drawing.Size(218, 24);
-            this.txtDiscount.TabIndex = 16;
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(174, 61);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(97, 19);
-            this.labelControl1.TabIndex = 1;
-            this.labelControl1.Text = "Project Name:";
-            // 
-            // labelControl7
-            // 
-            this.labelControl7.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(160, 108);
-            this.labelControl7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(111, 19);
-            this.labelControl7.TabIndex = 24;
-            this.labelControl7.Text = "Machine Name :";
-            // 
-            // textEdit3
-            // 
-            this.textEdit3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textEdit3.Location = new System.Drawing.Point(277, 105);
-            this.textEdit3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.Appearance.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit3.Properties.Appearance.Options.UseFont = true;
-            this.textEdit3.Size = new System.Drawing.Size(218, 24);
-            this.textEdit3.TabIndex = 25;
-            // 
-            // spinEdit1
-            // 
-            this.spinEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.spinEdit1.EditValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.spinEdit1.Location = new System.Drawing.Point(277, 154);
-            this.spinEdit1.Name = "spinEdit1";
-            this.spinEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.spinEdit1.Size = new System.Drawing.Size(218, 20);
-            this.spinEdit1.TabIndex = 33;
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(144, 155);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(127, 19);
-            this.labelControl5.TabIndex = 19;
-            this.labelControl5.Text = "Machine Number :";
-            // 
-            // comboBoxEdit2
-            // 
-            this.comboBoxEdit2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBoxEdit2.Location = new System.Drawing.Point(277, 201);
-            this.comboBoxEdit2.Name = "comboBoxEdit2";
-            this.comboBoxEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit2.Properties.Items.AddRange(new object[] {
-            "Rent",
-            "Own"});
-            this.comboBoxEdit2.Size = new System.Drawing.Size(218, 20);
-            this.comboBoxEdit2.TabIndex = 36;
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(146, 201);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(125, 19);
-            this.labelControl2.TabIndex = 37;
-            this.labelControl2.Text = "Owner Ship Type :";
-            // 
-            // spinEdit2
-            // 
-            this.spinEdit2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.spinEdit2.EditValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.spinEdit2.Location = new System.Drawing.Point(277, 245);
-            this.spinEdit2.Name = "spinEdit2";
-            this.spinEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.spinEdit2.Size = new System.Drawing.Size(218, 20);
-            this.spinEdit2.TabIndex = 38;
-            // 
-            // spinEdit3
-            // 
-            this.spinEdit3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.spinEdit3.EditValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.spinEdit3.Location = new System.Drawing.Point(277, 286);
-            this.spinEdit3.Name = "spinEdit3";
-            this.spinEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.spinEdit3.Size = new System.Drawing.Size(218, 20);
-            this.spinEdit3.TabIndex = 39;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(170, 246);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(101, 19);
-            this.labelControl3.TabIndex = 40;
-            this.labelControl3.Text = "Wage of Rent :";
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(96, 286);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(182, 19);
-            this.labelControl4.TabIndex = 41;
-            this.labelControl4.Text = "operation and meint.cost :";
             // 
             // tableLayoutPanel3
             // 
@@ -260,79 +132,318 @@
             this.tableLayoutPanel2.SetColumnSpan(this.tableLayoutPanel3, 2);
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.85714F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.14286F));
-            this.tableLayoutPanel3.Controls.Add(this.sbShowAll, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.simpleButton3, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.simpleButton2, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.simpleButton1, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.btnBack, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnAddMachine, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(96, 359);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(114, 413);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 3;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(399, 122);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(478, 71);
             this.tableLayoutPanel3.TabIndex = 43;
             // 
-            // sbShowAll
+            // btnBack
             // 
-            this.sbShowAll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.sbShowAll.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sbShowAll.Appearance.Options.UseFont = true;
-            this.sbShowAll.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("sbShowAll.ImageOptions.Image")));
-            this.sbShowAll.Location = new System.Drawing.Point(173, 47);
-            this.sbShowAll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.sbShowAll.Name = "sbShowAll";
-            this.sbShowAll.Size = new System.Drawing.Size(223, 32);
-            this.sbShowAll.TabIndex = 44;
-            this.sbShowAll.Text = "Show All Machines";
+            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBack.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Appearance.Options.UseFont = true;
+            this.btnBack.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.ImageOptions.Image")));
+            this.btnBack.Location = new System.Drawing.Point(3, 3);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(198, 31);
+            this.btnBack.TabIndex = 43;
+            this.btnBack.Text = "Back";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // simpleButton3
+            // btnAddMachine
             // 
-            this.simpleButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            this.simpleButton3.Location = new System.Drawing.Point(173, 5);
-            this.simpleButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(223, 32);
-            this.simpleButton3.TabIndex = 42;
-            this.simpleButton3.Text = "Save And Add Machine";
+            this.btnAddMachine.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddMachine.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddMachine.Appearance.Options.UseFont = true;
+            this.btnAddMachine.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAddMachine.ImageOptions.Image")));
+            this.btnAddMachine.Location = new System.Drawing.Point(207, 2);
+            this.btnAddMachine.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddMachine.Name = "btnAddMachine";
+            this.btnAddMachine.Size = new System.Drawing.Size(268, 34);
+            this.btnAddMachine.TabIndex = 42;
+            this.btnAddMachine.Text = "Save And Add Machine";
+            this.btnAddMachine.Click += new System.EventHandler(this.btnAddMachine_Click);
             // 
-            // simpleButton2
+            // txtMachine
             // 
-            this.simpleButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(3, 5);
-            this.simpleButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(164, 32);
-            this.simpleButton2.TabIndex = 1;
-            this.simpleButton2.Text = "Save And Back";
+            this.txtMachine.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMachine.Location = new System.Drawing.Point(330, 34);
+            this.txtMachine.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMachine.Name = "txtMachine";
+            this.txtMachine.Properties.Appearance.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMachine.Properties.Appearance.Options.UseFont = true;
+            this.txtMachine.Size = new System.Drawing.Size(262, 24);
+            this.txtMachine.TabIndex = 25;
             // 
-            // simpleButton1
+            // labelControl7
             // 
-            this.simpleButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(3, 47);
-            this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(164, 32);
-            this.simpleButton1.TabIndex = 43;
-            this.simpleButton1.Text = "Back";
+            this.labelControl7.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelControl7.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl7.Appearance.Options.UseFont = true;
+            this.labelControl7.Location = new System.Drawing.Point(213, 36);
+            this.labelControl7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(111, 19);
+            this.labelControl7.TabIndex = 24;
+            this.labelControl7.Text = "Machine Name :";
             // 
-            // textEdit1
+            // ghgf
             // 
-            this.textEdit1.Location = new System.Drawing.Point(501, 360);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(8, 20);
-            this.textEdit1.TabIndex = 44;
+            this.ghgf.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.ghgf.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ghgf.Appearance.Options.UseFont = true;
+            this.ghgf.Location = new System.Drawing.Point(197, 73);
+            this.ghgf.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ghgf.Name = "ghgf";
+            this.ghgf.Size = new System.Drawing.Size(127, 19);
+            this.ghgf.TabIndex = 19;
+            this.ghgf.Text = "Machine Number :";
+            // 
+            // cbOwnerShip
+            // 
+            this.cbOwnerShip.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbOwnerShip.Location = new System.Drawing.Point(330, 110);
+            this.cbOwnerShip.Name = "cbOwnerShip";
+            this.cbOwnerShip.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbOwnerShip.Properties.Items.AddRange(new object[] {
+            "Rent",
+            "Own"});
+            this.cbOwnerShip.Size = new System.Drawing.Size(262, 20);
+            this.cbOwnerShip.TabIndex = 36;
+            this.cbOwnerShip.SelectedIndexChanged += new System.EventHandler(this.cbOwnerShip_SelectedIndexChanged);
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Location = new System.Drawing.Point(199, 111);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(125, 19);
+            this.labelControl2.TabIndex = 37;
+            this.labelControl2.Text = "Owner Ship Type :";
+            // 
+            // txtMachineNumber
+            // 
+            this.txtMachineNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMachineNumber.Location = new System.Drawing.Point(330, 70);
+            this.txtMachineNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMachineNumber.Name = "txtMachineNumber";
+            this.txtMachineNumber.Properties.Appearance.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMachineNumber.Properties.Appearance.Options.UseFont = true;
+            this.txtMachineNumber.Size = new System.Drawing.Size(262, 24);
+            this.txtMachineNumber.TabIndex = 49;
+            // 
+            // sbWageRent
+            // 
+            this.sbWageRent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.sbWageRent.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.sbWageRent.Enabled = false;
+            this.sbWageRent.Location = new System.Drawing.Point(330, 150);
+            this.sbWageRent.Name = "sbWageRent";
+            this.sbWageRent.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.sbWageRent.Size = new System.Drawing.Size(262, 20);
+            this.sbWageRent.TabIndex = 38;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Location = new System.Drawing.Point(223, 151);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(101, 19);
+            this.labelControl3.TabIndex = 40;
+            this.labelControl3.Text = "Wage of Rent :";
+            // 
+            // sbWageOperation
+            // 
+            this.sbWageOperation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.sbWageOperation.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.sbWageOperation.Enabled = false;
+            this.sbWageOperation.Location = new System.Drawing.Point(330, 192);
+            this.sbWageOperation.Name = "sbWageOperation";
+            this.sbWageOperation.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.sbWageOperation.Size = new System.Drawing.Size(262, 20);
+            this.sbWageOperation.TabIndex = 39;
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Location = new System.Drawing.Point(142, 193);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(182, 19);
+            this.labelControl4.TabIndex = 41;
+            this.labelControl4.Text = "operation and meint.cost :";
+            // 
+            // groupControl2
+            // 
+            this.groupControl2.AppearanceCaption.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.groupControl2.AppearanceCaption.Options.UseFont = true;
+            this.tableLayoutPanel2.SetColumnSpan(this.groupControl2, 5);
+            this.groupControl2.Controls.Add(this.gcMachineData);
+            this.groupControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupControl2.Location = new System.Drawing.Point(3, 269);
+            this.groupControl2.LookAndFeel.SkinName = "Money Twins";
+            this.groupControl2.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.groupControl2.Name = "groupControl2";
+            this.groupControl2.Size = new System.Drawing.Size(932, 139);
+            this.groupControl2.TabIndex = 48;
+            this.groupControl2.Text = "All Machines Data";
+            // 
+            // gcMachineData
+            // 
+            this.gcMachineData.DataSource = this.cLSMachineDataBindingSource;
+            this.gcMachineData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gcMachineData.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gcMachineData.Location = new System.Drawing.Point(2, 26);
+            this.gcMachineData.MainView = this.gvMachineData;
+            this.gcMachineData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gcMachineData.Name = "gcMachineData";
+            this.gcMachineData.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repEdit,
+            this.repDelete});
+            this.gcMachineData.Size = new System.Drawing.Size(928, 111);
+            this.gcMachineData.TabIndex = 15;
+            this.gcMachineData.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gvMachineData});
+            // 
+            // cLSMachineDataBindingSource
+            // 
+            this.cLSMachineDataBindingSource.DataSource = typeof(SajaProjectV2.Model.CLS_MachineData);
+            // 
+            // gvMachineData
+            // 
+            this.gvMachineData.Appearance.HeaderPanel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.gvMachineData.Appearance.HeaderPanel.Options.UseFont = true;
+            this.gvMachineData.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.gvMachineData.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gvMachineData.Appearance.HeaderPanel.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gvMachineData.Appearance.Row.Font = new System.Drawing.Font("Calibri", 10.2F);
+            this.gvMachineData.Appearance.Row.Options.UseFont = true;
+            this.gvMachineData.Appearance.Row.Options.UseTextOptions = true;
+            this.gvMachineData.Appearance.Row.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gvMachineData.Appearance.Row.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gvMachineData.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colId,
+            this.colMachineName,
+            this.colMachineNumber,
+            this.colWageRent,
+            this.colWageMaintenance,
+            this.colProjectIdFk,
+            this.colEdit,
+            this.colDelete});
+            this.gvMachineData.DetailHeight = 284;
+            this.gvMachineData.GridControl = this.gcMachineData;
+            this.gvMachineData.Name = "gvMachineData";
+            this.gvMachineData.OptionsView.ShowGroupPanel = false;
+            this.gvMachineData.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.colId, DevExpress.Data.ColumnSortOrder.Ascending)});
+            // 
+            // colId
+            // 
+            this.colId.FieldName = "Id";
+            this.colId.Name = "colId";
+            this.colId.Width = 49;
+            // 
+            // colMachineName
+            // 
+            this.colMachineName.FieldName = "MachineName";
+            this.colMachineName.Name = "colMachineName";
+            this.colMachineName.Visible = true;
+            this.colMachineName.VisibleIndex = 0;
+            this.colMachineName.Width = 106;
+            // 
+            // colMachineNumber
+            // 
+            this.colMachineNumber.FieldName = "MachineNumber";
+            this.colMachineNumber.Name = "colMachineNumber";
+            this.colMachineNumber.Visible = true;
+            this.colMachineNumber.VisibleIndex = 1;
+            this.colMachineNumber.Width = 106;
+            // 
+            // colWageRent
+            // 
+            this.colWageRent.FieldName = "WageRent";
+            this.colWageRent.Name = "colWageRent";
+            this.colWageRent.Visible = true;
+            this.colWageRent.VisibleIndex = 2;
+            this.colWageRent.Width = 106;
+            // 
+            // colWageMaintenance
+            // 
+            this.colWageMaintenance.FieldName = "WageMaintenance";
+            this.colWageMaintenance.Name = "colWageMaintenance";
+            this.colWageMaintenance.Visible = true;
+            this.colWageMaintenance.VisibleIndex = 3;
+            this.colWageMaintenance.Width = 106;
+            // 
+            // colProjectIdFk
+            // 
+            this.colProjectIdFk.FieldName = "ProjectIdFk";
+            this.colProjectIdFk.Name = "colProjectIdFk";
+            // 
+            // colEdit
+            // 
+            this.colEdit.Caption = "Edit";
+            this.colEdit.ColumnEdit = this.repEdit;
+            this.colEdit.Name = "colEdit";
+            this.colEdit.Visible = true;
+            this.colEdit.VisibleIndex = 4;
+            this.colEdit.Width = 106;
+            // 
+            // repEdit
+            // 
+            this.repEdit.AutoHeight = false;
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
+            this.repEdit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.repEdit.Name = "repEdit";
+            this.repEdit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.repEdit.Click += new System.EventHandler(this.repEdit_Click);
+            // 
+            // colDelete
+            // 
+            this.colDelete.Caption = "Delete";
+            this.colDelete.ColumnEdit = this.repDelete;
+            this.colDelete.Name = "colDelete";
+            this.colDelete.Visible = true;
+            this.colDelete.VisibleIndex = 5;
+            this.colDelete.Width = 112;
+            // 
+            // repDelete
+            // 
+            this.repDelete.AutoHeight = false;
+            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
+            this.repDelete.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.repDelete.Name = "repDelete";
+            this.repDelete.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.repDelete.Click += new System.EventHandler(this.repDelete_Click);
             // 
             // groupControl1
             // 
@@ -346,7 +457,7 @@
             this.groupControl1.LookAndFeel.UseDefaultLookAndFeel = false;
             this.groupControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(712, 524);
+            this.groupControl1.Size = new System.Drawing.Size(942, 527);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Machines Data";
             // 
@@ -363,29 +474,35 @@
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(718, 528);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(948, 531);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // FRM_MachinesData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(718, 528);
+            this.ClientSize = new System.Drawing.Size(948, 531);
             this.Controls.Add(this.tableLayoutPanel1);
             this.LookAndFeel.SkinName = "Money Twins";
             this.LookAndFeel.UseDefaultLookAndFeel = false;
             this.Name = "FRM_MachinesData";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FRM_MachinesData_FormClosing);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDiscount.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spinEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spinEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spinEdit3.Properties)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMachine.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbOwnerShip.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMachineNumber.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sbWageRent.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sbWageOperation.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
+            this.groupControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gcMachineData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cLSMachineDataBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvMachineData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repEdit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repDelete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -396,25 +513,34 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private DevExpress.XtraEditors.TextEdit txtDiscount;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.SpinEdit spinEdit1;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.TextEdit txtMachine;
         private DevExpress.XtraEditors.LabelControl labelControl7;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.LabelControl ghgf;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit2;
+        private DevExpress.XtraEditors.ComboBoxEdit cbOwnerShip;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.SpinEdit spinEdit2;
-        private DevExpress.XtraEditors.SpinEdit spinEdit3;
+        private DevExpress.XtraEditors.SpinEdit sbWageRent;
+        private DevExpress.XtraEditors.SpinEdit sbWageOperation;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.SimpleButton sbShowAll;
+        private DevExpress.XtraEditors.SimpleButton btnAddMachine;
+        private DevExpress.XtraEditors.SimpleButton btnBack;
+        private DevExpress.XtraEditors.GroupControl groupControl2;
+        private DevExpress.XtraGrid.GridControl gcMachineData;
+        private System.Windows.Forms.BindingSource cLSMachineDataBindingSource;
+        private DevExpress.XtraGrid.Views.Grid.GridView gvMachineData;
+        private DevExpress.XtraGrid.Columns.GridColumn colId;
+        private DevExpress.XtraGrid.Columns.GridColumn colMachineName;
+        private DevExpress.XtraGrid.Columns.GridColumn colMachineNumber;
+        private DevExpress.XtraGrid.Columns.GridColumn colWageRent;
+        private DevExpress.XtraGrid.Columns.GridColumn colWageMaintenance;
+        private DevExpress.XtraGrid.Columns.GridColumn colProjectIdFk;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repEdit;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repDelete;
+        private DevExpress.XtraEditors.TextEdit txtMachineNumber;
+        private DevExpress.XtraGrid.Columns.GridColumn colDelete;
+        private DevExpress.XtraGrid.Columns.GridColumn colEdit;
     }
 }

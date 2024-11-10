@@ -9,8 +9,10 @@ namespace SajaProjectV2.Model
     public class CLS_Contract
     {
         public int Id { get; set; }
+        public string WorkItem { get; set; }
         public string ContractorName { get; set; }
         public string CompanyName { get; set; }
+        public string ContractCost { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime FinishDate { get; set; }
         public string Details { get; set; }

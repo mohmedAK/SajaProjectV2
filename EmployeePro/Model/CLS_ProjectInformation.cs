@@ -17,6 +17,10 @@ namespace SajaProjectV2.Model
         public DateTime StartDate { get; set; }
         public DateTime FinishDate { get; set; }
         public string Details { get; set; }
+
+        public string UserName { get; set; }
+
+        public int userIdFk { get; set; } // Foreign Key
     }
 
 }

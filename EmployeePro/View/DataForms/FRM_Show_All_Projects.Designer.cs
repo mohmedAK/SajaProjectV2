@@ -40,6 +40,16 @@
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions4 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject13 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject14 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject15 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject16 = new DevExpress.Utils.SerializableAppearanceObject();
             this.gcProjectInformation = new DevExpress.XtraGrid.GridControl();
             this.cLSProjectInformationBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gvProjectInformation = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -50,16 +60,22 @@
             this.colLocation = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colStartDate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colFinshDate = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colFallow = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repFallow = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.colEdit = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repEdit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.colDelete = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repDelete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.colCost = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repCosts = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.colProjectId = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gcProjectInformation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLSProjectInformationBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvProjectInformation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repFallow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repEdit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repDelete)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repCosts)).BeginInit();
             this.SuspendLayout();
             // 
             // gcProjectInformation
@@ -73,7 +89,9 @@
             this.gcProjectInformation.Name = "gcProjectInformation";
             this.gcProjectInformation.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repEdit,
-            this.repDelete});
+            this.repDelete,
+            this.repFallow,
+            this.repCosts});
             this.gcProjectInformation.Size = new System.Drawing.Size(897, 550);
             this.gcProjectInformation.TabIndex = 15;
             this.gcProjectInformation.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -103,12 +121,16 @@
             this.colLocation,
             this.colStartDate,
             this.colFinshDate,
+            this.colFallow,
             this.colEdit,
-            this.colDelete});
+            this.colDelete,
+            this.colCost});
             this.gvProjectInformation.DetailHeight = 284;
             this.gvProjectInformation.GridControl = this.gcProjectInformation;
             this.gvProjectInformation.Name = "gvProjectInformation";
             this.gvProjectInformation.OptionsView.ShowGroupPanel = false;
+            this.gvProjectInformation.CustomRowCellEdit += new DevExpress.XtraGrid.Views.Grid.CustomRowCellEditEventHandler(this.gvProjectInformation_CustomRowCellEdit);
+            this.gvProjectInformation.CustomUnboundColumnData += new DevExpress.XtraGrid.Views.Base.CustomColumnDataEventHandler(this.gvProjectInformation_CustomUnboundColumnData);
             // 
             // colProId
             // 
@@ -190,45 +212,83 @@
             this.colFinshDate.Visible = true;
             this.colFinshDate.VisibleIndex = 4;
             // 
+            // colFallow
+            // 
+            this.colFallow.Caption = "Fallow up";
+            this.colFallow.ColumnEdit = this.repFallow;
+            this.colFallow.Name = "colFallow";
+            this.colFallow.Visible = true;
+            this.colFallow.VisibleIndex = 8;
+            // 
+            // repFallow
+            // 
+            this.repFallow.AutoHeight = false;
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
+            this.repFallow.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.repFallow.Name = "repFallow";
+            this.repFallow.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.repFallow.Click += new System.EventHandler(this.repFallow_Click);
+            // 
             // colEdit
             // 
+            this.colEdit.Caption = "Edit ";
             this.colEdit.ColumnEdit = this.repEdit;
             this.colEdit.MinWidth = 21;
             this.colEdit.Name = "colEdit";
             this.colEdit.OptionsColumn.AllowMove = false;
             this.colEdit.Visible = true;
-            this.colEdit.VisibleIndex = 7;
+            this.colEdit.VisibleIndex = 9;
             this.colEdit.Width = 81;
             // 
             // repEdit
             // 
             this.repEdit.AutoHeight = false;
-            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
+            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
             this.repEdit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repEdit.Name = "repEdit";
             this.repEdit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.repEdit.Click += new System.EventHandler(this.repEdit_Click);
             // 
             // colDelete
             // 
+            this.colDelete.Caption = "Delete";
             this.colDelete.ColumnEdit = this.repDelete;
             this.colDelete.MinWidth = 21;
             this.colDelete.Name = "colDelete";
             this.colDelete.OptionsColumn.AllowMove = false;
             this.colDelete.Visible = true;
-            this.colDelete.VisibleIndex = 8;
+            this.colDelete.VisibleIndex = 10;
             this.colDelete.Width = 81;
             // 
             // repDelete
             // 
             this.repDelete.AutoHeight = false;
-            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
+            editorButtonImageOptions3.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions3.Image")));
             this.repDelete.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repDelete.Name = "repDelete";
             this.repDelete.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.repDelete.Click += new System.EventHandler(this.repDelete_Click);
+            // 
+            // colCost
+            // 
+            this.colCost.Caption = "Cost";
+            this.colCost.ColumnEdit = this.repCosts;
+            this.colCost.Name = "colCost";
+            this.colCost.Visible = true;
+            this.colCost.VisibleIndex = 7;
+            // 
+            // repCosts
+            // 
+            this.repCosts.AutoHeight = false;
+            editorButtonImageOptions4.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions4.Image")));
+            this.repCosts.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.repCosts.Name = "repCosts";
+            this.repCosts.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.repCosts.Click += new System.EventHandler(this.repCosts_Click);
             // 
             // colProjectId
             // 
@@ -251,11 +311,14 @@
             this.Name = "FRM_Show_All_Projects";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "All Projects";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FRM_Show_All_Projects_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.gcProjectInformation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLSProjectInformationBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvProjectInformation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repFallow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repEdit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repDelete)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repCosts)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -277,5 +340,9 @@
         private DevExpress.XtraGrid.Columns.GridColumn colLocation;
         private DevExpress.XtraGrid.Columns.GridColumn colStartDate;
         private DevExpress.XtraGrid.Columns.GridColumn colFinshDate;
+        private DevExpress.XtraGrid.Columns.GridColumn colFallow;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repFallow;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repCosts;
+        private DevExpress.XtraGrid.Columns.GridColumn colCost;
     }
 }

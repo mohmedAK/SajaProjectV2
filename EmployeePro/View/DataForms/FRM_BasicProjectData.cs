@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using SajaProjectV2.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,28 +14,52 @@ namespace SajaProjectV2.View.DataForms
 {
     public partial class FRM_BasicProjectData : DevExpress.XtraEditors.XtraForm
     {
+   
+   
         public FRM_BasicProjectData()
         {
             InitializeComponent();
+           
+            
+
+            if (CLS_UsereSession.Role == "Admin" || CLS_UsereSession.Role == "SuperAdmin")
+            {
+                btnUsers.Visible = true;
+            }
         }
+
+    
 
         private void sbNewProject_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FRM_GeneralProjectInformation fRM_GeniralProjectInformation = new FRM_GeneralProjectInformation();
-            fRM_GeniralProjectInformation.Show();
+          new FRM_GeneralProjectInformation().Show(); 
+           
         }
 
         private void sbShowProjects_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FRM_Show_All_Projects fRM_Show_All_Projects = new FRM_Show_All_Projects();
-            fRM_Show_All_Projects.Show();
+             new FRM_Show_All_Projects().Show();
         }
 
-        private void FRM_BasicProjectData_FormClosed(object sender, FormClosedEventArgs e)
+
+
+        private void FRM_BasicProjectData_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            Application.ExitThread();
+        }
+
+        private void btnUsers_Click(object sender, EventArgs e)
+        {
+            Hide();
+            new FRM_Users().Show();
+        }
+
+        private void simpleButton4_Click(object sender, EventArgs e)
+        {
+            Hide();
+            new FRM_Login().Show();
         }
     }
 }

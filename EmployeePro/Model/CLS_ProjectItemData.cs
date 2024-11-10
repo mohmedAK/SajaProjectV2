@@ -17,6 +17,25 @@ namespace SajaProjectV2.Model
         public DateTime FinishDate { get; set; }
         public string Details { get; set; }
         public int ProjectIdFk { get; set; } // Foreign Key
+
+        //claculate planing duration from start date and finish date
+        public double PlaningDuration
+        {
+            get
+            {
+                return (FinishDate - StartDate).TotalDays;
+            }
+        }
+
+        public double TotalCost
+        {
+            get
+            {
+                return PlanningQuantity * Price;
+            }
+        }
+
+
     }
 
 }
